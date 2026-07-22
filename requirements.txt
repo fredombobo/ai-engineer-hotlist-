@@ -14,5 +14,5 @@ PyGithub>=2.1
 # arXiv
 arxiv>=2.0
 
-# 可选: RSSHub 中文源
-# 纯 HTTP,不需要额外依赖
+# 翻译 (英→中)
+deep-translator>=1.11

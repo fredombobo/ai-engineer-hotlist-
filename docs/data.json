@@ -1,299 +1,162 @@
 [
   {
-    "title": "f/prompts.chat",
-    "url": "https://github.com/f/prompts.chat",
-    "source": "github",
-    "source_label": "GitHub",
-    "score": 150.0,
-    "summary": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-    "author": "f",
-    "published_at": "2026-07-22T04:07:26+00:00",
-    "tags": [],
-    "extra": {
-      "stars": 166207,
-      "forks": 21481,
-      "language": "HTML",
-      "topics": [
-        "chatgpt",
-        "ai",
-        "artificial-intelligence",
-        "awesome-list",
-        "chatgpt-prompts",
-        "claude",
-        "gemini",
-        "gpt",
-        "gpt-4",
-        "llm",
-        "machine-learning",
-        "nextjs",
-        "open-source",
-        "openai",
-        "prompt-engineering",
-        "prompts",
-        "typescript",
-        "prompts-chat"
-      ]
-    }
-  },
-  {
-    "title": "FlowiseAI/Flowise",
-    "url": "https://github.com/FlowiseAI/Flowise",
-    "source": "github",
-    "source_label": "GitHub",
-    "score": 120.0,
-    "summary": "Build AI Agents, Visually",
-    "author": "FlowiseAI",
-    "published_at": "2026-07-22T08:28:20+00:00",
-    "tags": [
-      "AI"
-    ],
-    "extra": {
-      "stars": 54832,
-      "forks": 24746,
-      "language": "TypeScript",
-      "topics": [
-        "artificial-intelligence",
-        "chatgpt",
-        "large-language-models",
-        "low-code",
-        "no-code",
-        "javascript",
-        "react",
-        "typescript",
-        "langchain",
-        "openai",
-        "rag",
-        "chatbot",
-        "workflow-automation",
-        "agentic-ai",
-        "agentic-workflow",
-        "agents",
-        "multiagent-systems"
-      ]
-    }
-  },
-  {
-    "title": "Significant-Gravitas/AutoGPT",
-    "url": "https://github.com/Significant-Gravitas/AutoGPT",
-    "source": "github",
-    "source_label": "GitHub",
-    "score": 100,
-    "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-    "author": "Significant-Gravitas",
-    "published_at": "2026-07-22T15:51:42+00:00",
-    "tags": [
-      "AI"
-    ],
-    "extra": {
-      "stars": 185655,
-      "forks": 46071,
-      "language": "Python",
-      "topics": [
-        "ai",
-        "openai",
-        "python",
-        "artificial-intelligence",
-        "autonomous-agents",
-        "llama-api",
-        "agentic-ai",
-        "agents",
-        "llm",
-        "claude",
-        "gpt"
-      ]
-    }
-  },
-  {
-    "title": "OpenHands/OpenHands",
-    "url": "https://github.com/OpenHands/OpenHands",
-    "source": "github",
-    "source_label": "GitHub",
-    "score": 100,
-    "summary": "🙌 OpenHands: AI-Driven Development",
-    "author": "OpenHands",
-    "published_at": "2026-07-22T15:52:11+00:00",
-    "tags": [
-      "AI"
-    ],
-    "extra": {
-      "stars": 81704,
-      "forks": 10449,
-      "language": "Python",
-      "topics": [
-        "agent",
-        "artificial-intelligence",
-        "llm",
-        "chatgpt",
-        "claude-ai",
-        "cli",
-        "developer-tools",
-        "gpt",
-        "openai"
-      ]
-    }
-  },
-  {
-    "title": "Kong/kong",
-    "url": "https://github.com/Kong/kong",
-    "source": "github",
-    "source_label": "GitHub",
-    "score": 100,
-    "summary": "🦍 The API and AI Gateway",
-    "author": "Kong",
-    "published_at": "2026-07-22T08:06:35+00:00",
-    "tags": [
-      "AI"
-    ],
-    "extra": {
-      "stars": 43832,
-      "forks": 5185,
-      "language": "Lua",
-      "topics": [
-        "api-gateway",
-        "microservices",
-        "api-management",
-        "serverless",
-        "apis",
-        "reverse-proxy",
-        "cloud-native",
-        "microservice",
-        "devops",
-        "kubernetes",
-        "kubernetes-ingress-controller",
-        "kubernetes-ingress",
-        "ai",
-        "artificial-intelligence",
-        "ai-gateway",
-        "llm-gateway",
-        "openai-proxy",
-        "llm-ops",
-        "mcp",
-        "mcp-gateway"
-      ]
-    }
-  },
-  {
-    "title": "usestrix/strix",
-    "url": "https://github.com/usestrix/strix",
-    "source": "github",
-    "source_label": "GitHub",
-    "score": 100,
-    "summary": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-    "author": "usestrix",
-    "published_at": "2026-07-22T15:46:58+00:00",
-    "tags": [
-      "AI"
-    ],
-    "extra": {
-      "stars": 43344,
-      "forks": 4483,
-      "language": "Python",
-      "topics": [
-        "agents",
-        "artificial-intelligence",
-        "cybersecurity",
-        "penetration-testing",
-        "ai-penetration-testing",
-        "ai-pentesting",
-        "ai-security",
-        "bug-bounty",
-        "ctf-tools",
-        "cybersecurity-tools",
-        "ethical-hacking",
-        "llm-security",
-        "offensive-security",
-        "pentesting-tools",
-        "red-teaming",
-        "security-automation",
-        "security",
-        "code-quality",
-        "ai-hacking",
-        "hacking"
-      ]
-    }
-  },
-  {
-    "title": "Glow emerges from stealth at $1.2B valuation to challenge endpoint security in the AI era",
-    "url": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
-    "source": "media_rss",
-    "source_label": "Tech Media",
-    "score": 48.0,
-    "summary": "Glow is targeting a new class of endpoint risks created by the rapid adoption of AI agents and developer tools inside enterprises.",
-    "author": "Jagmeet Singh",
-    "published_at": "2026-07-22T02:00:00+00:00",
-    "tags": [],
-    "extra": {
-      "source_name": "TechCrunch AI"
-    }
-  },
-  {
-    "title": "Meta is testing an AI bedtime story app for people with no imagination",
-    "url": "https://techcrunch.com/2026/07/21/meta-is-testing-an-ai-bedtime-story-app-for-people-with-no-imagination/",
+    "title": "Yope 筹集了 1230 万美元，用于建立一个没有算法或广告的私人社交网络",
+    "url": "https://techcrunch.com/2026/07/22/yope-raises-12-3m-to-build-a-private-social-network-without-algorithms-or-ads/",
     "source": "media_rss",
     "source_label": "Tech Media",
     "score": 45.0,
-    "summary": "At last, a tech company has found a way to outsource humanity's oldest pastime: using our imaginations.",
-    "author": "Amanda Silberling",
-    "published_at": "2026-07-21T15:55:10+00:00",
+    "summary": "Yope 是一款快速发展的社交应用程序，专注于朋友和家人的私人团体，已筹集 1230 万美元的种子资金。这家初创公司并没有追逐创作者和算法提要，而是押注社交网络的未来在于由消息传递、照片编辑支持的小型私人社区。",
+    "author": "Sarah Perez",
+    "published_at": "2026-07-22T10:13:58+00:00",
     "tags": [],
     "extra": {
-      "source_name": "TechCrunch AI"
+      "source_name": "TechCrunch AI",
+      "title_en": "Yope raises $12.3M to build a private social network without algorithms or ads",
+      "summary_en": "Yope, a fast-growing social app focused on private groups of friends and family, has raised $12.3 million in seed funding. Instead of chasing creators and algorithmic feeds, the startup is betting that the future of social networking lies in small, private communities powered by messaging, photo sha"
     }
   },
   {
-    "title": "Synthesia’s AI training platform is moving beyond videos into live coaching",
-    "url": "https://techcrunch.com/2026/07/22/synthesias-ai-training-platform-is-moving-beyond-videos-into-live-coaching/",
+    "title": "美国开源人工智能实验室 Arcee 表示，中国模式本质上并不危险",
+    "url": "https://techcrunch.com/2026/07/22/arcee-a-us-open-source-ai-lab-says-chinese-models-are-not-inherently-dangerous/",
     "source": "media_rss",
     "source_label": "Tech Media",
-    "score": 40,
-    "summary": "Synthesia launched AI Roleplay Sessions, an interactive enterprise training platform where employees practice workplace conversations with AI avatars that provide feedback, scoring, and analytics to h",
+    "score": 45.0,
+    "summary": "随着中国人工智能模型的能力和在美国公司中越来越受欢迎，关于应该采取什么措施的争论已经达到白热化。",
+    "author": "Julie Bort",
+    "published_at": "2026-07-22T08:24:08+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI",
+      "title_en": "Arcee, a US open source AI lab, says Chinese models are not inherently dangerous",
+      "summary_en": "As Chinese AI models grow in capability and popularity among U.S. companies, the arguing over what should be done about them has reached a fever pitch."
+    }
+  },
+  {
+    "title": "谷歌通过蓬勃发展的云业务证明其大规模人工智能支出的合理性",
+    "url": "https://techcrunch.com/2026/07/22/google-justifies-its-massive-ai-spending-with-a-booming-cloud-business/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "谷歌的云业务正在蓬勃发展，采用其人工智能和人工智能基础设施服务的公司帮助这家科技巨头公布了创纪录的利润。",
+    "author": "Lucas Ropek",
+    "published_at": "2026-07-22T14:01:52+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI",
+      "title_en": "Google justifies its massive AI spending with a booming cloud business",
+      "summary_en": "Google's cloud business is thriving, as companies adopting its AI and AI infrastructure services help the tech giant to report record profits."
+    }
+  },
+  {
+    "title": "白宫声称登月计划提炼了人类寓言后，财政部威胁实施制裁",
+    "url": "https://techcrunch.com/2026/07/22/treasury-threatens-sanctions-after-white-house-claims-moonshot-distilled-anthropics-fable/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "这一事件还加剧了华盛顿有关中国开放模式涌入的更广泛辩论。",
     "author": "Rebecca Bellan",
-    "published_at": "2026-07-22T00:00:00+00:00",
+    "published_at": "2026-07-22T12:49:03+00:00",
     "tags": [],
     "extra": {
-      "source_name": "TechCrunch AI"
+      "source_name": "TechCrunch AI",
+      "title_en": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic’s Fable",
+      "summary_en": "The episode has also intensified a broader debate in Washington over the influx of Chinese open models."
     }
   },
   {
-    "title": "The browser wars aren’t about search anymore — here are the best alternatives to Chrome and Safari",
-    "url": "https://techcrunch.com/2026/07/22/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
+    "title": "OpenAI 的人为错误如何导致人工智能驱动的 Hugging Face 黑客攻击",
+    "url": "https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face/",
     "source": "media_rss",
     "source_label": "Tech Media",
     "score": 30,
-    "summary": "We’ve compiled an overview of some of the top alternative browsers available today aiming to challenge Chrome and Safari.",
-    "author": "Lauren Forristal",
-    "published_at": "2026-07-22T05:20:35+00:00",
+    "summary": "OpenAI 在设置所谓的“高度隔离”测试环境和沙箱时犯了一个错误。网络安全专家表示，正是这种人为错误使得人工智能对 Hugging Face 的攻击成为可能。",
+    "author": "Lorenzo Franceschi-Bicchierai",
+    "published_at": "2026-07-22T11:11:46+00:00",
     "tags": [],
     "extra": {
-      "source_name": "TechCrunch AI"
+      "source_name": "TechCrunch AI",
+      "title_en": "How OpenAI’s human mistake led to the AI-powered hack on Hugging Face",
+      "summary_en": "OpenAI made a mistake setting up what it called a “highly isolated” testing environment and sandbox. According to cybersecurity experts, that human mistake is what made the AI-powered attack on Hugging Face possible."
     }
   },
   {
-    "title": "Passionfroot raises $15M to expand its B2B creator marketplace to the US",
-    "url": "https://techcrunch.com/2026/07/22/passionfroot-raises-15m-to-expand-its-b2b-creator-marketplace-to-the-us/",
+    "title": "Travis Kalanick 的机器人公司筹集了 $1.7B，由 a16z 领投",
+    "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
     "source": "media_rss",
     "source_label": "Tech Media",
     "score": 30,
-    "summary": "Passionfroot, a German startup building a marketplace connecting B2B creators with brands, has raised $15M in a Series A round led by Insight Partners.",
-    "author": "Ivan Mehta",
-    "published_at": "2026-07-22T05:00:00+00:00",
+    "summary": "Uber 还投资了 Travis Kalanick 的公司 Atoms，该公司曾模糊地宣称要利用工业人工智能来实现世界现代化。",
+    "author": "Sean O'Kane",
+    "published_at": "2026-07-22T10:50:44+00:00",
     "tags": [],
     "extra": {
-      "source_name": "TechCrunch AI"
+      "source_name": "TechCrunch AI",
+      "title_en": "Travis Kalanick’s robotics company raises $1.7B, led by a16z",
+      "summary_en": "Uber is also investing in Travis Kalanick's company Atoms, which has made gauzy claims about using industrial AI to modernize the world."
     }
   },
   {
-    "title": "The Anthropic-Physical Intelligence rumor roiling AI Twitter",
-    "url": "https://techcrunch.com/2026/07/21/the-anthropic-physical-intelligence-rumor-roiling-ai-twitter/",
+    "title": "Monday.com 裁员数百人专注于人工智能",
+    "url": "https://techcrunch.com/2026/07/22/monday-com-lays-off-hundreds-to-focuses-on-ai/",
     "source": "media_rss",
     "source_label": "Tech Media",
     "score": 30,
-    "summary": "Anthropic and OpenAI's aggressive 2026 acquisition sprees set the stage for a weekend rumor.",
-    "author": "Connie Loizos",
-    "published_at": "2026-07-21T19:20:57+00:00",
+    "summary": "该公司表示，将裁员 20%，即约 630 名员工，以“支持更精简、更专注的运营模式”，同时专注于人工智能工作平台。",
+    "author": "Ram Iyer",
+    "published_at": "2026-07-22T09:54:14+00:00",
     "tags": [],
     "extra": {
-      "source_name": "TechCrunch AI"
+      "source_name": "TechCrunch AI",
+      "title_en": "Monday.com lays off hundreds to focus on AI",
+      "summary_en": "The company said it is reducing its headcount by 20%, or about 630 staff, to \"support a leaner, more focused operating model\" as it focuses on its AI Work Platform."
+    }
+  },
+  {
+    "title": "Substack 的新工具告诉您谁在使用 AI 撰写时事通讯",
+    "url": "https://techcrunch.com/2026/07/22/substacks-new-tool-tells-you-whos-been-writing-their-newsletters-with-ai/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Substack 为读者提供了一种方法来估计一份时事通讯中有多少内容是由人工智能撰写的，这标志着人工智能辅助内容向透明度的更广泛转变。",
+    "author": "Sarah Perez",
+    "published_at": "2026-07-22T08:23:09+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI",
+      "title_en": "Substack’s new tool tells you who’s been writing their newsletters with AI",
+      "summary_en": "Substack is giving readers a way to estimate how much of a newsletter was written by AI, signaling a broader shift toward transparency around AI-assisted content."
+    }
+  },
+  {
+    "title": "OpenAI 的人工智能支出热潮已飙升至 $750B",
+    "url": "https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "到 2030 年，OpenAI 在基础设施上的支出将相当于瑞典的 GDP。",
+    "author": "Tim De Chant",
+    "published_at": "2026-07-22T08:13:30+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI",
+      "title_en": "OpenAI’s AI spending spree has ballooned to $750B",
+      "summary_en": "OpenAI will spend the equivalent of Sweden's GDP on infrastructure through 2030."
+    }
+  },
+  {
+    "title": "Menlo Ventures 的 Matt Murphy 解释了人工智能初创公司创始人必须采取哪些不同的做法",
+    "url": "https://techcrunch.com/podcast/menlo-ventures-matt-murphy-explains-what-ai-startups-founders-must-do-differently/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "到 5 月份，Anthropic 的收入运行率跃升至 470 亿美元，而 2025 年为 90 亿美元。Menlo Ventures 的马特·墨菲 (Matt Murphy) 表示，这种增长是他在 25 年的投资生涯中从未见过的，在互联网领域也是如此。",
+    "author": "Theresa Loconsolo, Julie Bort",
+    "published_at": "2026-07-22T06:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI",
+      "title_en": "Menlo Ventures’ Matt Murphy explains what AI startups founders must do differently",
+      "summary_en": "Anthropic&#160;leaped to&#160;a&#160;$47 billion&#160;revenue run rate&#160;by May,&#160;compared to&#160;$9 billion&#160;in 2025.&#160;It’s&#160;the kind of growth that&#160;Menlo Ventures&#8217;&#160;Matt Murphy&#160;says&#160;he&#8217;s&#160;never seen in 25 years of investing, not in the interne"
     }
   }
 ]

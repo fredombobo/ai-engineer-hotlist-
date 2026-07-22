@@ -244,6 +244,16 @@
   .card-title a:hover {
     color: var(--accent);
   }
+  .card-title-orig {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   .card-summary {
     font-size: 12.5px;
     color: var(--text-muted);
@@ -390,8 +400,11 @@
         <div class="score-bar"></div>
         <div class="card-body" style="padding-left: 4px;">
           <div class="card-title">
-            <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+            <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title_cn or item.title }}</a>
           </div>
+          {% if item.extra.title_en and item.extra.title_en != item.title %}
+          <div class="card-title-orig">{{ item.extra.title_en }}</div>
+          {% endif %}
           {% if item.summary %}
           <div class="card-summary">{{ item.summary }}</div>
           {% endif %}

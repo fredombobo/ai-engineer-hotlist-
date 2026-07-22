@@ -9,12 +9,24 @@ from datetime import datetime, timezone
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from src.models import HotItem
+from src.translator import translate
 
 
 def generate(cfg: dict, items: list[HotItem]):
     """生成 index.html"""
     output_path = cfg.get("output", {}).get("html", "docs/index.html")
     json_path = cfg.get("output", {}).get("json", "docs/data.json")
+
+    # 批量翻译标题和摘要 (英→中)
+    cn_sources = {"cn_social"}  # 中文源跳过翻译
+    for item in items:
+        if item.source not in cn_sources:
+            item.extra = item.extra or {}
+            item.extra["title_en"] = item.title
+            item.extra["summary_en"] = item.summary
+            item.title = translate(item.title)
+            if item.summary and len(item.summary) < 500:
+                item.summary = translate(item.summary)
 
     # 数据统计
     source_stats: dict[str, int] = {}
