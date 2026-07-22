@@ -1,6 +1,8 @@
 name: AI Engineer Hotlist — Daily Refresh
 
 on:
+  push:
+    branches: [main]
   schedule:
     # 每天 UTC 1:00 和 13:00 (北京 9:00 / 21:00)
     - cron: '0 1,13 * * *'
