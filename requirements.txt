@@ -1,0 +1,18 @@
+# AI Engineer Hotlist — 依赖
+pyyaml>=6.0
+requests>=2.31
+jinja2>=3.1
+feedparser>=6.0
+pytz>=2023.3
+
+# Reddit
+praw>=7.7
+
+# GitHub
+PyGithub>=2.1
+
+# arXiv
+arxiv>=2.0
+
+# 可选: RSSHub 中文源
+# 纯 HTTP,不需要额外依赖

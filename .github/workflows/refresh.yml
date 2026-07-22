@@ -1,0 +1,61 @@
+name: AI Engineer Hotlist — Daily Refresh
+
+on:
+  schedule:
+    # 每天 UTC 1:00 和 13:00 (北京 9:00 / 21:00)
+    - cron: '0 1,13 * * *'
+  workflow_dispatch:          # 支持手动触发
+    inputs:
+      dry_run:
+        description: 'Dry run (no push)'
+        required: false
+        default: 'false'
+      sources:
+        description: 'Specific sources (comma separated, empty=all)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run collectors & generate HTML
+        env:
+          WECOM_WEBHOOK_KEY: ${{ secrets.WECOM_WEBHOOK_KEY }}
+        run: |
+          args=""
+          if [[ "${{ github.event.inputs.dry_run }}" == "true" ]]; then
+            args="$args --dry-run"
+          fi
+          if [[ -n "${{ github.event.inputs.sources }}" ]]; then
+            args="$args --sources ${{ github.event.inputs.sources }}"
+          fi
+          python -m src.main $args
+          echo "Content of docs/:"
+          ls -la docs/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'ai-engineer-hotlist[bot]'
+          user_email: 'bot@ai-engineer-hotlist'
