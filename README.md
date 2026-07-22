@@ -87,7 +87,7 @@ python -m src.main --dry-run
    | Name · 名称 | Value · 值 |
    |:---|:---|
    | `WECOM_WEBHOOK_KEY` | 企业微信机器人 key |
-   | `GITHUB_TOKEN` | GitHub PAT (public_repo read) |
+   | `GH_PAT` | GitHub PAT (public_repo read) |
 
 3. **Enable GitHub Pages**: Settings → Pages → Branch `gh-pages` / `docs`
 4. **Done!** Auto-refreshes daily at **UTC 1:00 & 13:00** (Beijing 9:00 / 21:00)
@@ -122,7 +122,7 @@ Edit `config.yaml` to customize:
 | Variable · 变量 | Purpose · 用途 |
 |:---|:---|
 | `WECOM_WEBHOOK_KEY` | 企业微信机器人 key (overrides config) |
-| `GITHUB_TOKEN` | GitHub PAT (for API rate limit) |
+| `GH_PAT` | GitHub PAT (for API rate limit) |
 
 ---
 

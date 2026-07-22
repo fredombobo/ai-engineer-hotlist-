@@ -38,6 +38,7 @@ jobs:
       - name: Run collectors & generate HTML
         env:
           WECOM_WEBHOOK_KEY: ${{ secrets.WECOM_WEBHOOK_KEY }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           args=""
           if [[ "${{ github.event.inputs.dry_run }}" == "true" ]]; then

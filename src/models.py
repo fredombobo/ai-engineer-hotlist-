@@ -46,7 +46,7 @@ def load_config(path: str = "config.yaml") -> dict:
         )
 
     # GitHub Token 优先走环境变量
-    gh_token = os.environ.get("GITHUB_TOKEN", "")
+    gh_token = os.environ.get("GH_PAT", "")
     if gh_token:
         cfg["github_token"] = gh_token
 
