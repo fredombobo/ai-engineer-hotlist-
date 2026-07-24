@@ -11,7 +11,7 @@ output:
 # 从 https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxx 获取
 # 建议通过 GitHub Secrets 传入: WECOM_WEBHOOK_KEY
 wecom:
-  webhook_url: ""               # 留空 = 通过环境变量 WECOM_WEBHOOK_KEY 拼接
+  webhook_url: ""               # 留空 = 不推送
   # webhook_url: "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=YOUR_KEY_HERE"
 
 # --- 各数据源开关 & 参数 ---
