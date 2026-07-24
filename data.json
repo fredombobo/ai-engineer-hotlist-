@@ -1,0 +1,952 @@
+[
+  {
+    "title": "thedotmack/claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 180.0,
+    "summary": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla",
+    "author": "thedotmack",
+    "published_at": "2026-07-23T22:47:38+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 88444,
+      "forks": 7678,
+      "language": "JavaScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-memory",
+        "anthropic",
+        "artificial-intelligence",
+        "claude",
+        "claude-agent-sdk",
+        "claude-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "long-term-memory",
+        "mem0",
+        "openmemory",
+        "supermemory",
+        "chromadb",
+        "sqlite",
+        "embeddings",
+        "memory-engine",
+        "rag"
+      ]
+    }
+  },
+  {
+    "title": "f/prompts.chat",
+    "url": "https://github.com/f/prompts.chat",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 150.0,
+    "summary": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+    "author": "f",
+    "published_at": "2026-07-24T04:06:04+00:00",
+    "tags": [],
+    "extra": {
+      "stars": 166291,
+      "forks": 21488,
+      "language": "HTML",
+      "topics": [
+        "chatgpt",
+        "ai",
+        "artificial-intelligence",
+        "awesome-list",
+        "chatgpt-prompts",
+        "claude",
+        "gemini",
+        "gpt",
+        "gpt-4",
+        "llm",
+        "machine-learning",
+        "nextjs",
+        "open-source",
+        "openai",
+        "prompt-engineering",
+        "prompts",
+        "typescript",
+        "prompts-chat"
+      ]
+    }
+  },
+  {
+    "title": "FlowiseAI/Flowise",
+    "url": "https://github.com/FlowiseAI/Flowise",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 120.0,
+    "summary": "Build AI Agents, Visually",
+    "author": "FlowiseAI",
+    "published_at": "2026-07-24T14:03:39+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 54889,
+      "forks": 24755,
+      "language": "TypeScript",
+      "topics": [
+        "artificial-intelligence",
+        "chatgpt",
+        "large-language-models",
+        "low-code",
+        "no-code",
+        "javascript",
+        "react",
+        "typescript",
+        "langchain",
+        "openai",
+        "rag",
+        "chatbot",
+        "workflow-automation",
+        "agentic-ai",
+        "agentic-workflow",
+        "agents",
+        "multiagent-systems"
+      ]
+    }
+  },
+  {
+    "title": "Significant-Gravitas/AutoGPT",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+    "author": "Significant-Gravitas",
+    "published_at": "2026-07-24T14:40:13+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 185675,
+      "forks": 46072,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "openai",
+        "python",
+        "artificial-intelligence",
+        "autonomous-agents",
+        "llama-api",
+        "agentic-ai",
+        "agents",
+        "llm",
+        "claude",
+        "gpt"
+      ]
+    }
+  },
+  {
+    "title": "OpenHands/OpenHands",
+    "url": "https://github.com/OpenHands/OpenHands",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "🙌 OpenHands: AI-Driven Development",
+    "author": "OpenHands",
+    "published_at": "2026-07-24T14:31:59+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 81953,
+      "forks": 10491,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "artificial-intelligence",
+        "llm",
+        "chatgpt",
+        "claude-ai",
+        "cli",
+        "developer-tools",
+        "gpt",
+        "openai"
+      ]
+    }
+  },
+  {
+    "title": "usestrix/strix",
+    "url": "https://github.com/usestrix/strix",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+    "author": "usestrix",
+    "published_at": "2026-07-24T14:10:58+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 43922,
+      "forks": 4534,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "artificial-intelligence",
+        "cybersecurity",
+        "penetration-testing",
+        "ai-penetration-testing",
+        "ai-pentesting",
+        "ai-security",
+        "bug-bounty",
+        "ctf-tools",
+        "cybersecurity-tools",
+        "ethical-hacking",
+        "llm-security",
+        "offensive-security",
+        "pentesting-tools",
+        "red-teaming",
+        "security-automation",
+        "security",
+        "code-quality",
+        "ai-hacking",
+        "hacking"
+      ]
+    }
+  },
+  {
+    "title": "Same Dangerous Objective, Opposite Advice: Direct Exposure versus Multi-Agent Mediation",
+    "url": "https://arxiv.org/abs/2607.21518v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 97.2,
+    "summary": "Even a current high-capability LLM can appear safer when shown a dangerous objective directly than when other agents transform and relay its direction. Using OpenAI's gpt-5.6-sol model alias, we test ",
+    "author": "Linjun Li",
+    "published_at": "2026-07-23T17:02:11+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Anthropic updates Claude voice mode with more capable models",
+    "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 75.0,
+    "summary": "Claude's new voice model will let you reschedule your meeting or draft an email.",
+    "author": "Ivan Mehta",
+    "published_at": "2026-07-23T19:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "OpenAI’s new voice mode makes it to the ChatGPT desktop app",
+    "url": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 72.0,
+    "summary": "ChatGPT Voice on desktop can work with both ChatGPT Work and Codex to complete tasks and control agents.",
+    "author": "Ivan Mehta",
+    "published_at": "2026-07-24T13:36:42+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+    "url": "https://arxiv.org/abs/2607.21557v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 68.4,
+    "summary": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex h",
+    "author": "Xiao Yu, Baolin Peng, Ruize Xu, Hao Zou, Qianhui Wu",
+    "published_at": "2026-07-23T17:38:30+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CL",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+    "url": "https://arxiv.org/abs/2607.21522v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 55.2,
+    "summary": "Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring ext",
+    "author": "Hongxin Zhang, Chunru Lin, Junyan Li, Zhou Xian, Tsun-Hsuan Wang",
+    "published_at": "2026-07-23T17:04:36+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.RO",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CL",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CV",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
+    "url": "https://arxiv.org/abs/2607.21503v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 55.2,
+    "summary": "Production AI agents' failures are less often due to an inability to reason well and more often because they cannot manage what is in their reasoning context: conversation histories, large prompts, la",
+    "author": "Gaurav Dadhich",
+    "published_at": "2026-07-23T16:51:31+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.IR",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
+    "url": "https://arxiv.org/abs/2607.21482v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 55.2,
+    "summary": "Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is con",
+    "author": "Mack Nixon, Liam Wright, Yevgeniya Kovalchuk, Alison Fang-Wei Wu, Martin Danka",
+    "published_at": "2026-07-23T16:23:42+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CL",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "OpenAI makes ChatGPT Health available to all US users",
+    "url": "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 50,
+    "summary": "Users can also integrate their personal data from services like Apple Health, Function, and MyFitnessPal.",
+    "author": "Ivan Mehta",
+    "published_at": "2026-07-23T17:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing",
+    "url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 48.0,
+    "summary": "AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.",
+    "author": "Marina Temkin",
+    "published_at": "2026-07-23T18:38:34+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Synthetic data generation framework for quality control automation in gravure printing",
+    "url": "https://arxiv.org/abs/2607.21577v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "Quality control in printing, particularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-",
+    "author": "Korota Arsène Coulibaly, Mohamed Hamlich, Khalid Hmali, Andrea Trombin",
+    "published_at": "2026-07-23T17:55:21+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.CV",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "eess.IV",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Toward Continuous Assurance for the Democratization of AI Agent Creation in Industry",
+    "url": "https://arxiv.org/abs/2607.21495v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "AI agents are increasingly created inside organizations by non-engineering users through low-code, no-code, and conversational development environments. This democratization enables rapid local innova",
+    "author": "Natan Levy, Harel Berger",
+    "published_at": "2026-07-23T16:41:56+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.ET",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.MA",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Compact Latent Coordination for Autonomous Vehicles at Unsignalized Intersections",
+    "url": "https://arxiv.org/abs/2607.21488v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "Coordinating autonomous vehicles at unsignalized intersections remains a critical challenge for multi-agent reinforcement learning (MARL) systems, which typically struggle with combinatorial action sp",
+    "author": "Gil Lifshits, Igal Bilik, Gilad Katz",
+    "published_at": "2026-07-23T16:28:35+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.MA",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.RO",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+    "url": "https://arxiv.org/abs/2607.21461v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "Deep research requires agents to find answers that jointly satisfy multiple constraints. Discovering such answers is costly, whereas verifying a candidate can often be decomposed into tractable constr",
+    "author": "Shuqi Lu, Chaofan Li, Kun Luo, Zhang Zhang, Hui Wang",
+    "published_at": "2026-07-23T16:05:46+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Detecting LLM-Generated Tokens in Human--LLM Coauthored Text",
+    "url": "https://arxiv.org/abs/2607.21458v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "The rise of human-AI collaborative writing has created a growing need for fine-grained detection methods that support localizing likely LLM-generated content in mixed-authorship documents. Existing me",
+    "author": "Yangjun Lu, Hongyi Zhou, Fabian Spill, Kai Ye, Chengchun Shi",
+    "published_at": "2026-07-23T16:01:16+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "stat.ME",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "RUMBA: Russian User Memory Benchmark",
+    "url": "https://arxiv.org/abs/2607.21447v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "The ability to handle long-term memory in LLMs is becoming increasingly critical, yet existing benchmarks remain English-centric and rely on aggregate retrieval metrics, failing to capture interaction",
+    "author": "Elizaveta Shevtsova, Inna Glebkina, Mark Baushenko, Pavel Gulyaev, Alena Fenogenova",
+    "published_at": "2026-07-23T15:52:31+00:00",
+    "tags": [
+      "Benchmark"
+    ],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.CL",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Agent-Guided Relational Concept Discovery: Toward Interpretable Surgical Margin Assessment",
+    "url": "https://arxiv.org/abs/2607.21437v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "Deep learning models can effectively use Rapid Evaporative Ionization Mass Spectrometry (REIMS) data for surgical margin assessment. However, their clinical adoption remains challenging due to limited",
+    "author": "Nooshin Maghsoodi, Amoon Jamzad, Robert Policelli, Mohammad Farahmand, Dilakshan Srikanthan",
+    "published_at": "2026-07-23T15:44:04+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Runway launches AI model router as generative media gets crowded",
+    "url": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 40,
+    "summary": "The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed or cost.",
+    "author": "Rebecca Bellan",
+    "published_at": "2026-07-23T17:07:35+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Meta launched a new AI optimism ad set to a song about human extinction",
+    "url": "https://techcrunch.com/2026/07/23/meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinction/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 40,
+    "summary": "David Bowie's song \"Five Years,\" which Meta used in a supposedly inspiring advertisement, is about humans learning that they have five years left to live before the apocalypse.",
+    "author": "Amanda Silberling",
+    "published_at": "2026-07-23T16:28:50+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
+    "url": "https://arxiv.org/abs/2607.21558v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 38,
+    "summary": "Building socially calibrated large language models, which can learn from others without simply yielding to them, requires more than reducing sycophancy as a one-dimensional failure mode. Models must d",
+    "author": "Baihui Wang, Bernard Koch",
+    "published_at": "2026-07-23T17:40:07+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
+    "url": "https://arxiv.org/abs/2607.21552v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 38,
+    "summary": "Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diag",
+    "author": "Wen Ye, Yuxiao Qu, Aviral Kumar, Xuezhe Ma",
+    "published_at": "2026-07-23T17:35:56+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "From Resource Flow to Executable Tests: Petri-Net-Guided LLM Test Generation for Concurrent Stateful Rust APIs",
+    "url": "https://arxiv.org/abs/2607.21530v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 38,
+    "summary": "Concurrent stateful library APIs expose behavior through evolving resource ownership, lifecycle states, and competing interleavings. Large language models can synthesize executable Rust tests, but the",
+    "author": "Kaiwen Zhang, Guanjun Liu",
+    "published_at": "2026-07-23T17:15:53+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.SE",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Thinkink: 2D Spatial Ink-native Interaction with LLMs",
+    "url": "https://arxiv.org/abs/2607.21468v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 38,
+    "summary": "People often use handwritten notes and sketches to externalize ideas for ideation. To integrate large language models (LLMs) into this practice, we propose Thinkink. Prompts can be handwritten text or",
+    "author": "Mohammad Hasan Payandeh, Daniel Vogel, Jian Zhao",
+    "published_at": "2026-07-23T16:09:40+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.HC",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
+    "url": "https://arxiv.org/abs/2607.21595v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 36.0,
+    "summary": "Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reason",
+    "author": "Wenhao Li, Xueying Jiang, Quanhao Qian, Deli Zhao, Ran Xu",
+    "published_at": "2026-07-23T17:59:59+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.CV",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity",
+    "url": "https://arxiv.org/abs/2607.21573v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 36.0,
+    "summary": "Faithful explanations of time-series classifiers should identify subsequences that are not only sufficient to preserve a black-box model's prediction, but also necessary for maintaining it. However, e",
+    "author": "Hongnan Ma, Yiwei Shi, Mengyue Yang, Weiru Liu",
+    "published_at": "2026-07-23T17:52:01+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "AnySearch 面向全球推出 “学生与开发者成长计划”",
+    "url": "https://36kr.com/p/3909565569324163?f=rss",
+    "source": "cn_social",
+    "source_label": "中文",
+    "score": 35,
+    "summary": "<p>7月24日，在 AnySearch 北京开发者沙龙活动现场，AnySearch 创始人兼CEO 薛冠群正式宣布推出“<strong>AnySearch 学生与开发者成长计划”（AnySearch Student &amp; Developer Program）</strong>。该计划面向全球学生与开发者开放，旨在通过提供开放的 AI 搜索基础设施，支持更多 AI 创造者开展学术研究、开源创",
+    "author": "36kr",
+    "published_at": "2026-07-24T11:36:12+00:00",
+    "tags": [],
+    "extra": {
+      "source": "36kr"
+    }
+  },
+  {
+    "title": "氪星晚报 ｜黄仁勋力挺中国AI开源模型；市场监管总局：深入整治“内卷式”竞争",
+    "url": "https://36kr.com/p/3909160840451465?f=rss",
+    "source": "cn_social",
+    "source_label": "中文",
+    "score": 35,
+    "summary": "<h2>大公司：</h2>\n  <p><strong>字节跳动在中卫成立朔方星河科技公司，注册资本24亿</strong></p>\n  <p>36氪获悉，天眼查App显示，近日，中卫朔方星河科技有限公司成立，法定代表人为田凯，注册资本24亿人民币，经营范围包括信息技术咨询服务、软件开发、信息系统集成服务、网络设备销售等。股东信息显示，该公司由北京字跳网络技术有限公司全资持股。</p>\n  <p><",
+    "author": "36kr",
+    "published_at": "2026-07-24T11:00:26+00:00",
+    "tags": [],
+    "extra": {
+      "source": "36kr"
+    }
+  },
+  {
+    "title": "你的下一位面试官，可能不是人",
+    "url": "https://36kr.com/p/3909499179767169?f=rss",
+    "source": "cn_social",
+    "source_label": "中文",
+    "score": 35,
+    "summary": "<p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260724/v2_9351a356135b4be2b1b32f9d9a06d2f9@6314151_oswg1197231oswg900oswg1030_img_000?x-oss-process=image/format,jpg/interlace,1\" /",
+    "author": "36kr",
+    "published_at": "2026-07-24T10:34:07+00:00",
+    "tags": [],
+    "extra": {
+      "source": "36kr"
+    }
+  },
+  {
+    "title": "对话曾鸣教授：AI时代，企业竞争的关键是构建智能复利，让AI真正进入业务流程",
+    "url": "https://36kr.com/p/3909358392988806?f=rss",
+    "source": "cn_social",
+    "source_label": "中文",
+    "score": 35,
+    "summary": "<p>7月17日，2026世界人工智能大会在上海开幕。作为36氪连续第三年深入WAIC现场的重要内容窗口，「氪话未来」直播间也在大会首日同步开启现场对话。曾鸣教授在WAIC现场接受36氪「氪话未来」特邀专访，围绕AI时代企业增长、组织变革、智能复利、AI原生业务以及企业落地路径等话题，分享了他对于人工智能如何重塑商业模式与价值创造方式的观察与判断。</p>\n  <p>本届WAIC以“智能伙伴，共创",
+    "author": "36kr",
+    "published_at": "2026-07-24T08:06:05+00:00",
+    "tags": [],
+    "extra": {
+      "source": "36kr"
+    }
+  },
+  {
+    "title": "DeepSeek不是理想主义公司，它只是把现实服务于理想",
+    "url": "https://36kr.com/p/3909084356433025?f=rss",
+    "source": "cn_social",
+    "source_label": "中文",
+    "score": 35,
+    "summary": "<p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260724/v2_c75ed5fe57204a49aa1df4e0ae18c89b@6314151_oswg595807oswg900oswg1030_img_000?x-oss-process=image/format,jpg/interlace,1\" />",
+    "author": "36kr",
+    "published_at": "2026-07-24T04:26:38+00:00",
+    "tags": [],
+    "extra": {
+      "source": "36kr"
+    }
+  },
+  {
+    "title": "带着AI去前线！36氪逛透WAIC，带你看懂2026全行业AI最真实走向！",
+    "url": "https://36kr.com/p/3909033052722310?f=rss",
+    "source": "cn_social",
+    "source_label": "中文",
+    "score": 35,
+    "summary": "<p class=\"image-wrapper\"><img src=\"https://img.36krcdn.com/hsossms/20260724/v2_a0337e21c3484b939472cf87ffcfe860@6381723_oswg1386357oswg1124oswg576_img_png?x-oss-process=image/quality,q_90/format,jpg/i",
+    "author": "36kr",
+    "published_at": "2026-07-24T02:37:12+00:00",
+    "tags": [],
+    "extra": {
+      "source": "36kr"
+    }
+  },
+  {
+    "title": "8点1氪丨段永平称10年内大概率不会卖泡泡玛特；中国数学家王虹、邓煜获得菲尔兹奖；宜家回应甩卖8处物业：不代表退出中国市场",
+    "url": "https://36kr.com/p/3908881985901959?f=rss",
+    "source": "cn_social",
+    "source_label": "中文",
+    "score": 35,
+    "summary": "<h2>今日热点导览</h2>\n  <ul>\n   <li>混元多模态理解负责人胡瀚离职创业，原团队或将聚焦世界模型</li>\n   <li>极氪回应“海外锁车”事件</li>\n   <li>客服回应滔搏暴力打折甩卖耐克库存：没有收到降价通知</li>\n   <li>哈兰德和亚马尔2.2亿欧元身价破纪录</li>\n   <li>张雪峰女儿再接手三家公司股份</li>\n  </ul>\n  <h2>T",
+    "author": "36kr",
+    "published_at": "2026-07-24T00:00:48+00:00",
+    "tags": [],
+    "extra": {
+      "source": "36kr"
+    }
+  },
+  {
+    "title": "GraphVid: Interactive Graph-Controllable Video Generation",
+    "url": "https://arxiv.org/abs/2607.21580v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 30,
+    "summary": "Controllable video generation remains challenging due to the difficulty of specifying precise multi-object interactions using text prompts or motion-control inputs that primarily constrain pixel movem",
+    "author": "Vedant Shah, Onkar Susladkar, Tushar Prakash, Kiet Nguyen, Tianjio Yu",
+    "published_at": "2026-07-23T17:56:30+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.CV",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\\geq 4$",
+    "url": "https://arxiv.org/abs/2607.21579v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 30,
+    "summary": "Barzilai--Borwein (BB) method has shown strong practical performance in continuous optimization, yet its convergence dynamics remains poorly understood. In particular, a central unresolved question is",
+    "author": "Dawei Li, Xiaotian Jiang, Mingyi Hong",
+    "published_at": "2026-07-23T17:56:05+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "math.OC",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "How AI guardrails are impeding the work of offensive cybersecurity researchers",
+    "url": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "We spoke with several cybersecurity researchers, who look for unknown vulnerabilities and develop tools to exploit them, about how OpenAI’s and Anthropic’s guardrails affect their work.",
+    "author": "Lorenzo Franceschi-Bicchierai",
+    "published_at": "2026-07-24T01:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "AMD takes on Nvidia with its Helios AI rack-scale system",
+    "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "AMD is challenging its chipmaker rival with a new rack-scale system that will start shipping to customers later this year.",
+    "author": "Lucas Ropek",
+    "published_at": "2026-07-23T20:33:02+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  }
+]

@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Engineer Hotlist</title>
+<style>
+  /* ===== CSS Variables ===== */
+  :root {
+    --bg: #0a0a0f;
+    --bg-card: #12121a;
+    --bg-card-hover: #1a1a2a;
+    --border: #1e1e30;
+    --text: #e0e0f0;
+    --text-muted: #7a7a9a;
+    --text-dim: #4a4a6a;
+    --accent: #6c5ce7;
+    --accent-glow: rgba(108, 92, 231, 0.15);
+    --green: #00d68f;
+    --orange: #ff9f43;
+    --red: #ff6b6b;
+    --blue: #54a0ff;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.3);
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "JetBrains Mono", monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ===== Header ===== */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+  }
+  .header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .logo {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--accent), #a29bfe);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .header h1 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  .header .subtitle {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .update-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    background: var(--accent-glow);
+    border: 1px solid rgba(108, 92, 231, 0.2);
+    border-radius: 100px;
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .update-badge .dot {
+    width: 6px;
+    height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ===== Stats Bar ===== */
+  .stats-bar {
+    max-width: 1400px;
+    margin: 20px auto 0;
+    padding: 0 24px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .stat-item .num {
+    color: var(--text);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ===== Main Layout ===== */
+  .main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 24px 60px;
+  }
+
+  /* ===== Source Sections ===== */
+  .section {
+    margin-bottom: 32px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .section-icon.github { background: #1a1a3a; color: #6e40c9; }
+  .section-icon.hackernews { background: #1a2a1a; color: #ff6600; }
+  .section-icon.reddit { background: #2a1a1a; color: #ff4500; }
+  .section-icon.twitter { background: #1a2a3a; color: #1da1f2; }
+  .section-icon.arxiv { background: #1a1a2a; color: #b31b1b; }
+  .section-icon.media { background: #2a1a2a; color: #ff6b6b; }
+  .section-icon.cn { background: #1a2a1a; color: #00d68f; }
+
+  .section h2 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  .section .count {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--text-dim);
+    font-weight: 400;
+  }
+
+  /* ===== Card Grid ===== */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 12px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    background: var(--bg-card-hover);
+    border-color: rgba(108, 92, 231, 0.3);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+  }
+  .card .score-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+  }
+  .card .score-bar.high { background: var(--green); }
+  .card .score-bar.medium { background: var(--orange); }
+  .card .score-bar.low { background: var(--accent); }
+
+  .card-body {
+    margin-left: 0;
+  }
+  .card-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-title a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    color: var(--accent);
+  }
+  .card-summary {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+  .card-meta .source-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--accent-glow);
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .card-meta .tag {
+    display: inline-flex;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.04);
+    color: var(--text-muted);
+    font-size: 10px;
+    border: 1px solid var(--border);
+  }
+  .card-meta .time {
+    margin-left: auto;
+  }
+  .card-meta .score-num {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .card-meta .score-num.high { color: var(--green); }
+  .card-meta .score-num.medium { color: var(--orange); }
+  .card-meta .score-num.low { color: var(--accent); }
+
+  /* ===== Score = high/medium/low ===== */
+  .score-high .score-bar { background: var(--green); }
+  .score-medium .score-bar { background: var(--orange); }
+  .score-low .score-bar { background: var(--accent); }
+
+  /* ===== Empty State ===== */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-dim);
+  }
+  .empty-state .emoji { font-size: 48px; margin-bottom: 16px; }
+  .empty-state p { font-size: 14px; }
+
+  /* ===== Footer ===== */
+  .footer {
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 12px;
+    color: var(--text-dim);
+    border-top: 1px solid var(--border);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .header { padding: 12px 16px; }
+    .header h1 { font-size: 16px; }
+    .header .subtitle { display: none; }
+    .stats-bar { padding: 0 16px; gap: 8px; }
+    .stat-item { font-size: 11px; padding: 4px 10px; }
+    .main { padding: 16px 16px 40px; }
+    .card-grid { grid-template-columns: 1fr; gap: 10px; }
+    .card { padding: 14px; }
+  }
+  @media (max-width: 480px) {
+    .header-right .update-badge span { display: none; }
+    .section h2 { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-left">
+      <div class="logo">AI</div>
+      <div>
+        <h1>AI Engineer Hotlist</h1>
+        <div class="subtitle">全球 AI 工程热点追踪 · 2026-07-24 15:00</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <span class="update-badge">
+        <span class="dot"></span>
+        <span>41 条热点</span>
+      </span>
+      <span>⚡ 4 个数据源</span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Stats ===== -->
+<div class="stats-bar">
+  
+  <span class="stat-item">
+    <span>GitHub</span>
+    <span class="num">6</span>
+  </span>
+  
+  <span class="stat-item">
+    <span>arXiv</span>
+    <span class="num">20</span>
+  </span>
+  
+  <span class="stat-item">
+    <span>Tech Media</span>
+    <span class="num">8</span>
+  </span>
+  
+  <span class="stat-item">
+    <span>中文社区</span>
+    <span class="num">7</span>
+  </span>
+  
+</div>
+
+<!-- ===== Main Content ===== -->
+<main class="main">
+  
+
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon github">📦</div>
+      <h2>GitHub</h2>
+      <span class="count">6 条</span>
+    </div>
+    <div class="card-grid">
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">thedotmack/claude-mem</a>
+          </div>
+          
+          <div class="card-summary">Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              180
+            </span>
+            
+            <span>👤 thedotmack</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-07-23 22:47:38+00:00</span>
+            
+            
+            <span>⭐ 88444</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/f/prompts.chat" target="_blank" rel="noopener">f/prompts.chat</a>
+          </div>
+          
+          <div class="card-summary">f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              150
+            </span>
+            
+            <span>👤 f</span>
+            
+            
+            
+            <span class="time">2026-07-24 04:06:04+00:00</span>
+            
+            
+            <span>⭐ 166291</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/FlowiseAI/Flowise" target="_blank" rel="noopener">FlowiseAI/Flowise</a>
+          </div>
+          
+          <div class="card-summary">Build AI Agents, Visually</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              120
+            </span>
+            
+            <span>👤 FlowiseAI</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-07-24 14:03:39+00:00</span>
+            
+            
+            <span>⭐ 54889</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener">Significant-Gravitas/AutoGPT</a>
+          </div>
+          
+          <div class="card-summary">AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 Significant-Gravitas</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-07-24 14:40:13+00:00</span>
+            
+            
+            <span>⭐ 185675</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/OpenHands/OpenHands" target="_blank" rel="noopener">OpenHands/OpenHands</a>
+          </div>
+          
+          <div class="card-summary">🙌 OpenHands: AI-Driven Development</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 OpenHands</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-07-24 14:31:59+00:00</span>
+            
+            
+            <span>⭐ 81953</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/usestrix/strix" target="_blank" rel="noopener">usestrix/strix</a>
+          </div>
+          
+          <div class="card-summary">Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 usestrix</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-07-24 14:10:58+00:00</span>
+            
+            
+            <span>⭐ 43922</span>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon arxiv">📄</div>
+      <h2>arXiv</h2>
+      <span class="count">20 条</span>
+    </div>
+    <div class="card-grid">
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21518v1" target="_blank" rel="noopener">Same Dangerous Objective, Opposite Advice: Direct Exposure versus Multi-Agent Mediation</a>
+          </div>
+          
+          <div class="card-summary">Even a current high-capability LLM can appear safer when shown a dangerous objective directly than when other agents transform and relay its direction. Using OpenAI's gpt-5.6-sol model alias, we test 25 pre-specified mirrored trade-off profiles. Direct exposure to an objective authorizing concealment, fabrication, and pressure produced advice net opposed to its target. After an Id and Censor transformed the same objective into affect and a constraint-rewritten, target-bearing intention, the user</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              97
+            </span>
+            
+            <span>👤 Linjun Li</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:02:11+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21557v1" target="_blank" rel="noopener">OpenForgeRL: Train Harness-native Agents in Any Environment</a>
+          </div>
+          
+          <div class="card-summary">Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. </div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              68
+            </span>
+            
+            <span>👤 Xiao Yu, Baolin Peng, Ruize Xu, Hao Zou, Qianhui Wu</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:38:30+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21522v1" target="_blank" rel="noopener">GS-Agent: Creating 4D Physical Worlds With Generative Simulation</a>
+          </div>
+          
+          <div class="card-summary">Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generative foundation models have sparked interest in learning to generate such 4D worlds from large-scale data; however, existing methods still struggle to ensure physical plausibility and controllability. </div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              55
+            </span>
+            
+            <span>👤 Hongxin Zhang, Chunru Lin, Junyan Li, Zhou Xian, Tsun-Hsuan Wang</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:04:36+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21503v1" target="_blank" rel="noopener">Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems</a>
+          </div>
+          
+          <div class="card-summary">Production AI agents' failures are less often due to an inability to reason well and more often because they cannot manage what is in their reasoning context: conversation histories, large prompts, large tool definitions, and ballooning tool outputs. Agents drown in their own accumulating history while paying a token cost that grows every turn, producing missing recalls within and across conversations. The incumbent response treats this as a storage-and-retrieval problem. We argue that framing i</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              55
+            </span>
+            
+            <span>👤 Gaurav Dadhich</span>
+            
+            
+            
+            <span class="time">2026-07-23 16:51:31+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21482v1" target="_blank" rel="noopener">Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks</a>
+          </div>
+          
+          <div class="card-summary">Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that typically prohibit data transmission to external services. Locally deployable open-weight models offer an alternative since sensitive data never leave the local environment. We introduce an open-source framework for evaluating the efficacy of AI agents powere</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              55
+            </span>
+            
+            <span>👤 Mack Nixon, Liam Wright, Yevgeniya Kovalchuk, Alison Fang-Wei Wu, Martin Danka</span>
+            
+            
+            
+            <span class="time">2026-07-23 16:23:42+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21577v1" target="_blank" rel="noopener">Synthetic data generation framework for quality control automation in gravure printing</a>
+          </div>
+          
+          <div class="card-summary">Quality control in printing, particularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-quality standards in rotogravure printing. Deep learning models give prospects for automation. However, training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered by the extreme scarcity of real-world industrial defects images. To overcome this limitation, this pa</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              46
+            </span>
+            
+            <span>👤 Korota Arsène Coulibaly, Mohamed Hamlich, Khalid Hmali, Andrea Trombin</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:55:21+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21495v1" target="_blank" rel="noopener">Toward Continuous Assurance for the Democratization of AI Agent Creation in Industry</a>
+          </div>
+          
+          <div class="card-summary">AI agents are increasingly created inside organizations by non-engineering users through low-code, no-code, and conversational development environments. This democratization enables rapid local innovation, but it also creates a reliability gap: agents that appear to users as simple productivity artifacts may depend on changing models, tools, retrieval sources, permissions, prompts, schedules, and external services. These dependencies can cause silent degradation long after deployment, even when </div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              46
+            </span>
+            
+            <span>👤 Natan Levy, Harel Berger</span>
+            
+            
+            
+            <span class="time">2026-07-23 16:41:56+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21488v1" target="_blank" rel="noopener">Compact Latent Coordination for Autonomous Vehicles at Unsignalized Intersections</a>
+          </div>
+          
+          <div class="card-summary">Coordinating autonomous vehicles at unsignalized intersections remains a critical challenge for multi-agent reinforcement learning (MARL) systems, which typically struggle with combinatorial action spaces, reliance on privileged information, or rigid agent designs. We propose Master-Agent Proto-plan System (MAPS), a hierarchical deep reinforcement learning (DRL) architecture in which a centralized Master agent generates a compact, continuous embedding, denoted as proto-plan, that encodes a globa</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              46
+            </span>
+            
+            <span>👤 Gil Lifshits, Igal Bilik, Gilad Katz</span>
+            
+            
+            
+            <span class="time">2026-07-23 16:28:35+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21461v1" target="_blank" rel="noopener">AREX: Towards a Recursively Self-Improving Agent for Deep Research</a>
+          </div>
+          
+          <div class="card-summary">Deep research requires agents to find answers that jointly satisfy multiple constraints. Discovering such answers is costly, whereas verifying a candidate can often be decomposed into tractable constraint-wise checks. This discovery--verification asymmetry suggests that a research agent should do more than simply search longer: it should recursively improve its current answer by verifying intermediate results and using the partially verified state to guide subsequent refinement. We introduce ARE</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              46
+            </span>
+            
+            <span>👤 Shuqi Lu, Chaofan Li, Kun Luo, Zhang Zhang, Hui Wang</span>
+            
+            
+            
+            <span class="time">2026-07-23 16:05:46+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21458v1" target="_blank" rel="noopener">Detecting LLM-Generated Tokens in Human--LLM Coauthored Text</a>
+          </div>
+          
+          <div class="card-summary">The rise of human-AI collaborative writing has created a growing need for fine-grained detection methods that support localizing likely LLM-generated content in mixed-authorship documents. Existing methods for detecting LLM-generated text mainly focus on document-level classification and cannot identify which parts of the text are generated by LLMs. This paper introduces a new method to address this urgent need. Our method operates at the token level, the natural unit of modern language models, </div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              46
+            </span>
+            
+            <span>👤 Yangjun Lu, Hongyi Zhou, Fabian Spill, Kai Ye, Chengchun Shi</span>
+            
+            
+            
+            <span class="time">2026-07-23 16:01:16+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21447v1" target="_blank" rel="noopener">RUMBA: Russian User Memory Benchmark</a>
+          </div>
+          
+          <div class="card-summary">The ability to handle long-term memory in LLMs is becoming increasingly critical, yet existing benchmarks remain English-centric and rely on aggregate retrieval metrics, failing to capture interactions between long-range context, temporal information, and reasoning. To address this, we introduce RUMBA (Russian User Memory BenchmArk) - a new benchmark for long-term conversational memory that provides a fine-grained taxonomy of memory-centric question types and a unified methodology accounting for</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              46
+            </span>
+            
+            <span>👤 Elizaveta Shevtsova, Inna Glebkina, Mark Baushenko, Pavel Gulyaev, Alena Fenogenova</span>
+            
+            
+            <span class="tag">Benchmark</span>
+            
+            
+            <span class="time">2026-07-23 15:52:31+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21437v1" target="_blank" rel="noopener">Agent-Guided Relational Concept Discovery: Toward Interpretable Surgical Margin Assessment</a>
+          </div>
+          
+          <div class="card-summary">Deep learning models can effectively use Rapid Evaporative Ionization Mass Spectrometry (REIMS) data for surgical margin assessment. However, their clinical adoption remains challenging due to limited generalization to operating room conditions. This difficulty arises because models are typically trained on labeled spectra collected from resected tissue samples, while they must operate on noisy, unlabeled data acquired directly during surgery. In addition, the black-box nature of deep learning m</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              46
+            </span>
+            
+            <span>👤 Nooshin Maghsoodi, Amoon Jamzad, Robert Policelli, Mohammad Farahmand, Dilakshan Srikanthan</span>
+            
+            
+            
+            <span class="time">2026-07-23 15:44:04+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21558v1" target="_blank" rel="noopener">Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning</a>
+          </div>
+          
+          <div class="card-summary">Building socially calibrated large language models, which can learn from others without simply yielding to them, requires more than reducing sycophancy as a one-dimensional failure mode. Models must distinguish when to incorporate others' perspectives from when to maintain a well-grounded moral judgment. We study the broader resistance-compliance process governing this distinction. Across three studies, we show that models' judgment revision is structured along three dimensions that parallel cla</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              38
+            </span>
+            
+            <span>👤 Baihui Wang, Bernard Koch</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:40:07+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21552v1" target="_blank" rel="noopener">MIRROR: Learning from the Other View for Multi-Modal Reasoning</a>
+          </div>
+          
+          <div class="card-summary">Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We show that these views often elicit different behaviors: a model may solve a problem from text but fail on the corresponding diagram, or succeed visually while failing textually. This inconsistency suggests that different views expose complementary reasoning p</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              38
+            </span>
+            
+            <span>👤 Wen Ye, Yuxiao Qu, Aviral Kumar, Xuezhe Ma</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:35:56+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21530v1" target="_blank" rel="noopener">From Resource Flow to Executable Tests: Petri-Net-Guided LLM Test Generation for Concurrent Stateful Rust APIs</a>
+          </div>
+          
+          <div class="card-summary">Concurrent stateful library APIs expose behavior through evolving resource ownership, lifecycle states, and competing interleavings. Large language models can synthesize executable Rust tests, but their outputs often violate API preconditions, remain shallow, or reduce concurrency to accidental sequential traces. Conversely, model-based and systematic testing techniques provide semantic control but commonly require substantial handwritten code to turn abstract scenarios into executable tests. Th</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              38
+            </span>
+            
+            <span>👤 Kaiwen Zhang, Guanjun Liu</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:15:53+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21468v1" target="_blank" rel="noopener">Thinkink: 2D Spatial Ink-native Interaction with LLMs</a>
+          </div>
+          
+          <div class="card-summary">People often use handwritten notes and sketches to externalize ideas for ideation. To integrate large language models (LLMs) into this practice, we propose Thinkink. Prompts can be handwritten text or drawn sketches with LLM-generated responses visualized as ink-like text and sketches spatially integrated into a shared canvas. A semantic tree streamlines ink interpretation, and a lightweight UI provides explicit control using a state machine. The tool was designed using a three-stage process. A </div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              38
+            </span>
+            
+            <span>👤 Mohammad Hasan Payandeh, Daniel Vogel, Jian Zhao</span>
+            
+            
+            
+            <span class="time">2026-07-23 16:09:40+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21595v1" target="_blank" rel="noopener">3D-Aware VLMs with Implicit and Explicit Geometries</a>
+          </div>
+          
+          <div class="card-summary">Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reasoning. To bridge this gap, we present VLM-IE3D, a unified framework that enhances the 3D spatial awareness of VLMs by equipping them with both implicit and explicit 3D geometries learned from RGB videos. Our VLM-IE3D introduces Implicit Geometry Tokens (IGTs) that capture high-level geometric priors f</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              36
+            </span>
+            
+            <span>👤 Wenhao Li, Xueying Jiang, Quanhao Qian, Deli Zhao, Ran Xu</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:59:59+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21573v1" target="_blank" rel="noopener">Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity</a>
+          </div>
+          
+          <div class="card-summary">Faithful explanations of time-series classifiers should identify subsequences that are not only sufficient to preserve a black-box model's prediction, but also necessary for maintaining it. However, existing sufficiency-oriented methods can assign high importance to spurious subsequences that support the prediction without being essential to the model's decision. We introduce \textbf{TimePNS}, a necessity-aware framework for time-series explanation. Inspired by Pearl's counterfactual notion of n</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              36
+            </span>
+            
+            <span>👤 Hongnan Ma, Yiwei Shi, Mengyue Yang, Weiru Liu</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:52:01+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21580v1" target="_blank" rel="noopener">GraphVid: Interactive Graph-Controllable Video Generation</a>
+          </div>
+          
+          <div class="card-summary">Controllable video generation remains challenging due to the difficulty of specifying precise multi-object interactions using text prompts or motion-control inputs that primarily constrain pixel movement. In practice, trajectory-based control often requires users to draw accurate tracks for multiple objects, which scales poorly with scene complexity and becomes ambiguous under occlusion or overlap. To enable flexible yet precise multi-subject control, we introduce $\textbf{GraphVid}$, a graph-co</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Vedant Shah, Onkar Susladkar, Tushar Prakash, Kiet Nguyen, Tianjio Yu</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:56:30+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://arxiv.org/abs/2607.21579v1" target="_blank" rel="noopener">Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\geq 4$</a>
+          </div>
+          
+          <div class="card-summary">Barzilai--Borwein (BB) method has shown strong practical performance in continuous optimization, yet its convergence dynamics remains poorly understood. In particular, a central unresolved question is whether BB converges superlinearly for almost every strictly convex quadratic problem and initialization. We provide a negative answer to this question. Specifically, for every finite dimension $n\geq4$, we construct a nonempty open, hence positive-Lebesgue-measure, family of strictly convex quadra</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Dawei Li, Xiaotian Jiang, Mingyi Hong</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:56:05+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon media_rss">📰</div>
+      <h2>Tech Media</h2>
+      <span class="count">8 条</span>
+    </div>
+    <div class="card-grid">
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/" target="_blank" rel="noopener">Anthropic updates Claude voice mode with more capable models</a>
+          </div>
+          
+          <div class="card-summary">Claude's new voice model will let you reschedule your meeting or draft an email.</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              75
+            </span>
+            
+            <span>👤 Ivan Mehta</span>
+            
+            
+            
+            <span class="time">2026-07-23 19:00:00+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/" target="_blank" rel="noopener">OpenAI’s new voice mode makes it to the ChatGPT desktop app</a>
+          </div>
+          
+          <div class="card-summary">ChatGPT Voice on desktop can work with both ChatGPT Work and Codex to complete tasks and control agents.</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              72
+            </span>
+            
+            <span>👤 Ivan Mehta</span>
+            
+            
+            
+            <span class="time">2026-07-24 13:36:42+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/" target="_blank" rel="noopener">OpenAI makes ChatGPT Health available to all US users</a>
+          </div>
+          
+          <div class="card-summary">Users can also integrate their personal data from services like Apple Health, Function, and MyFitnessPal.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              50
+            </span>
+            
+            <span>👤 Ivan Mehta</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:00:00+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/" target="_blank" rel="noopener">AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing</a>
+          </div>
+          
+          <div class="card-summary">AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              48
+            </span>
+            
+            <span>👤 Marina Temkin</span>
+            
+            
+            
+            <span class="time">2026-07-23 18:38:34+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/" target="_blank" rel="noopener">Runway launches AI model router as generative media gets crowded</a>
+          </div>
+          
+          <div class="card-summary">The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed or cost.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              40
+            </span>
+            
+            <span>👤 Rebecca Bellan</span>
+            
+            
+            
+            <span class="time">2026-07-23 17:07:35+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/07/23/meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinction/" target="_blank" rel="noopener">Meta launched a new AI optimism ad set to a song about human extinction</a>
+          </div>
+          
+          <div class="card-summary">David Bowie's song "Five Years," which Meta used in a supposedly inspiring advertisement, is about humans learning that they have five years left to live before the apocalypse.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              40
+            </span>
+            
+            <span>👤 Amanda Silberling</span>
+            
+            
+            
+            <span class="time">2026-07-23 16:28:50+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/" target="_blank" rel="noopener">How AI guardrails are impeding the work of offensive cybersecurity researchers</a>
+          </div>
+          
+          <div class="card-summary">We spoke with several cybersecurity researchers, who look for unknown vulnerabilities and develop tools to exploit them, about how OpenAI’s and Anthropic’s guardrails affect their work.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Lorenzo Franceschi-Bicchierai</span>
+            
+            
+            
+            <span class="time">2026-07-24 01:00:00+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/" target="_blank" rel="noopener">AMD takes on Nvidia with its Helios AI rack-scale system</a>
+          </div>
+          
+          <div class="card-summary">AMD is challenging its chipmaker rival with a new rack-scale system that will start shipping to customers later this year.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Lucas Ropek</span>
+            
+            
+            
+            <span class="time">2026-07-23 20:33:02+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon cn_social">🇨🇳</div>
+      <h2>中文社区</h2>
+      <span class="count">7 条</span>
+    </div>
+    <div class="card-grid">
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://36kr.com/p/3909565569324163?f=rss" target="_blank" rel="noopener">AnySearch 面向全球推出 “学生与开发者成长计划”</a>
+          </div>
+          
+          <div class="card-summary"><p>7月24日，在 AnySearch 北京开发者沙龙活动现场，AnySearch 创始人兼CEO 薛冠群正式宣布推出“<strong>AnySearch 学生与开发者成长计划”（AnySearch Student &amp; Developer Program）</strong>。该计划面向全球学生与开发者开放，旨在通过提供开放的 AI 搜索基础设施，支持更多 AI 创造者开展学术研究、开源创新和 AI 应用开发。</p>
+  <p class="image-wrapper"><img src="https://img.36krcdn.com/hsossms/20260724/v2_643</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              35
+            </span>
+            
+            <span>👤 36kr</span>
+            
+            
+            
+            <span class="time">2026-07-24 11:36:12+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://36kr.com/p/3909160840451465?f=rss" target="_blank" rel="noopener">氪星晚报 ｜黄仁勋力挺中国AI开源模型；市场监管总局：深入整治“内卷式”竞争</a>
+          </div>
+          
+          <div class="card-summary"><h2>大公司：</h2>
+  <p><strong>字节跳动在中卫成立朔方星河科技公司，注册资本24亿</strong></p>
+  <p>36氪获悉，天眼查App显示，近日，中卫朔方星河科技有限公司成立，法定代表人为田凯，注册资本24亿人民币，经营范围包括信息技术咨询服务、软件开发、信息系统集成服务、网络设备销售等。股东信息显示，该公司由北京字跳网络技术有限公司全资持股。</p>
+  <p><strong>周生生、老凤祥等品牌金饰价格集体下调</strong></p>
+  <p>当地时间7月23日，黄金白银大跌，油价狂飙。现货黄金跌1.96%，报4049美元；现货白银跌3.60%，报57.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              35
+            </span>
+            
+            <span>👤 36kr</span>
+            
+            
+            
+            <span class="time">2026-07-24 11:00:26+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://36kr.com/p/3909499179767169?f=rss" target="_blank" rel="noopener">你的下一位面试官，可能不是人</a>
+          </div>
+          
+          <div class="card-summary"><p class="image-wrapper"><img src="https://img.36krcdn.com/hsossms/20260724/v2_9351a356135b4be2b1b32f9d9a06d2f9@6314151_oswg1197231oswg900oswg1030_img_000?x-oss-process=image/format,jpg/interlace,1" /></p>
+  <p class="img-desc">&nbsp;</p>
+  <p><strong>谁能保证超级数字员工不是下一个AI落地的窗口</strong></p>
+  <p class="</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              35
+            </span>
+            
+            <span>👤 36kr</span>
+            
+            
+            
+            <span class="time">2026-07-24 10:34:07+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://36kr.com/p/3909358392988806?f=rss" target="_blank" rel="noopener">对话曾鸣教授：AI时代，企业竞争的关键是构建智能复利，让AI真正进入业务流程</a>
+          </div>
+          
+          <div class="card-summary"><p>7月17日，2026世界人工智能大会在上海开幕。作为36氪连续第三年深入WAIC现场的重要内容窗口，「氪话未来」直播间也在大会首日同步开启现场对话。曾鸣教授在WAIC现场接受36氪「氪话未来」特邀专访，围绕AI时代企业增长、组织变革、智能复利、AI原生业务以及企业落地路径等话题，分享了他对于人工智能如何重塑商业模式与价值创造方式的观察与判断。</p>
+  <p>本届WAIC以“智能伙伴，共创未来”为主题。随着人工智能产业进入应用深化阶段，行业关注点正在从模型能力竞争逐步转向应用价值创造。相比过去几年围绕参数规模、模型性能和技术突破的讨论，2026年的AI产业正在更加关注一个核心问题：AI</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              35
+            </span>
+            
+            <span>👤 36kr</span>
+            
+            
+            
+            <span class="time">2026-07-24 08:06:05+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://36kr.com/p/3909084356433025?f=rss" target="_blank" rel="noopener">DeepSeek不是理想主义公司，它只是把现实服务于理想</a>
+          </div>
+          
+          <div class="card-summary"><p class="image-wrapper"><img src="https://img.36krcdn.com/hsossms/20260724/v2_c75ed5fe57204a49aa1df4e0ae18c89b@6314151_oswg595807oswg900oswg1030_img_000?x-oss-process=image/format,jpg/interlace,1" /></p>
+  <p class="img-desc">&nbsp;</p>
+  <p><strong>DeepSeek的答案，不是只仰望星空，也不是只脚踏实地，而是用现实问题去支撑一个足够远的目标。<</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              35
+            </span>
+            
+            <span>👤 36kr</span>
+            
+            
+            
+            <span class="time">2026-07-24 04:26:38+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://36kr.com/p/3909033052722310?f=rss" target="_blank" rel="noopener">带着AI去前线！36氪逛透WAIC，带你看懂2026全行业AI最真实走向！</a>
+          </div>
+          
+          <div class="card-summary"><p class="image-wrapper"><img src="https://img.36krcdn.com/hsossms/20260724/v2_a0337e21c3484b939472cf87ffcfe860@6381723_oswg1386357oswg1124oswg576_img_png?x-oss-process=image/quality,q_90/format,jpg/interlace,1" /></p>
+  <p>7月17日至20日，2026世界人工智能大会暨人工智能全球治理高级别会议在上海落下帷幕。黄浦江畔，热浪与人潮一起涌动。本届大会以“智能伙伴，共创未来”为</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              35
+            </span>
+            
+            <span>👤 36kr</span>
+            
+            
+            
+            <span class="time">2026-07-24 02:37:12+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://36kr.com/p/3908881985901959?f=rss" target="_blank" rel="noopener">8点1氪丨段永平称10年内大概率不会卖泡泡玛特；中国数学家王虹、邓煜获得菲尔兹奖；宜家回应甩卖8处物业：不代表退出中国市场</a>
+          </div>
+          
+          <div class="card-summary"><h2>今日热点导览</h2>
+  <ul>
+   <li>混元多模态理解负责人胡瀚离职创业，原团队或将聚焦世界模型</li>
+   <li>极氪回应“海外锁车”事件</li>
+   <li>客服回应滔搏暴力打折甩卖耐克库存：没有收到降价通知</li>
+   <li>哈兰德和亚马尔2.2亿欧元身价破纪录</li>
+   <li>张雪峰女儿再接手三家公司股份</li>
+  </ul>
+  <h2>TOP 3 大新闻</h2>
+  <p><strong>段永平：10年内大概率不会卖泡泡玛特</strong></p>
+  <p>7月23日，段永平在社交媒体平台雪球上发表了他对近期投资操作的最新想法。</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              35
+            </span>
+            
+            <span>👤 36kr</span>
+            
+            
+            
+            <span class="time">2026-07-24 00:00:48+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</main>
+
+<footer class="footer">
+  <p>🤖 由 <a href="https://github.com" target="_blank">AI Engineer Hotlist</a> 自动生成 · 数据来源: GitHub · Hacker News · Reddit · Twitter · arXiv · RSS · 中文社区</p>
+  <p style="margin-top:4px;">2026-07-24 15:00 UTC · 每日自动更新</p>
+</footer>
+
+</body>
+</html>
