@@ -1,0 +1,170 @@
+[
+  {
+    "title": "thedotmack/claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 180.0,
+    "summary": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla",
+    "author": "thedotmack",
+    "published_at": "2026-09-12T21:10:13+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 93755,
+      "forks": 8249,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-memory",
+        "anthropic",
+        "artificial-intelligence",
+        "claude",
+        "claude-agent-sdk",
+        "claude-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "long-term-memory",
+        "mem0",
+        "openmemory",
+        "supermemory",
+        "chromadb",
+        "sqlite",
+        "embeddings",
+        "memory-engine",
+        "rag"
+      ]
+    }
+  },
+  {
+    "title": "Significant-Gravitas/AutoGPT",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+    "author": "Significant-Gravitas",
+    "published_at": "2026-09-13T05:49:37+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 187292,
+      "forks": 46019,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "openai",
+        "python",
+        "artificial-intelligence",
+        "autonomous-agents",
+        "llama-api",
+        "agentic-ai",
+        "agents",
+        "llm",
+        "claude",
+        "gpt"
+      ]
+    }
+  },
+  {
+    "title": "OpenHands/OpenHands",
+    "url": "https://github.com/OpenHands/OpenHands",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "🙌 OpenHands: AI-Driven Development",
+    "author": "OpenHands",
+    "published_at": "2026-09-13T03:54:59+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 87701,
+      "forks": 11489,
+      "language": "TypeScript",
+      "topics": [
+        "agent",
+        "artificial-intelligence",
+        "llm",
+        "chatgpt",
+        "claude-ai",
+        "cli",
+        "developer-tools",
+        "gpt",
+        "openai"
+      ]
+    }
+  },
+  {
+    "title": "usestrix/strix",
+    "url": "https://github.com/usestrix/strix",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+    "author": "usestrix",
+    "published_at": "2026-09-12T16:37:42+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 62132,
+      "forks": 6798,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "artificial-intelligence",
+        "cybersecurity",
+        "penetration-testing",
+        "ai-penetration-testing",
+        "ai-pentesting",
+        "ai-security",
+        "bug-bounty",
+        "ctf-tools",
+        "cybersecurity-tools",
+        "ethical-hacking",
+        "llm-security",
+        "offensive-security",
+        "pentesting-tools",
+        "red-teaming",
+        "security-automation",
+        "security",
+        "code-quality",
+        "ai-hacking",
+        "hacking"
+      ]
+    }
+  },
+  {
+    "title": "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
+    "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman.",
+    "author": "Anthony Ha",
+    "published_at": "2026-09-12T20:19:16+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Anthropic CEO outlines plan to slow AI development",
+    "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Anthropic's Dario Amodei and OpenAI's Sam Altman seem to agree that it's time to \"pace the frontier.\" What would that actually look like?",
+    "author": "Anthony Ha",
+    "published_at": "2026-09-12T19:34:44+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  }
+]
