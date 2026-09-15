@@ -1,0 +1,288 @@
+[
+  {
+    "title": "Significant-Gravitas/AutoGPT",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+    "author": "Significant-Gravitas",
+    "published_at": "2026-09-15T17:32:53+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 187365,
+      "forks": 46016,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "openai",
+        "python",
+        "artificial-intelligence",
+        "autonomous-agents",
+        "llama-api",
+        "agentic-ai",
+        "agents",
+        "llm",
+        "claude",
+        "gpt"
+      ]
+    }
+  },
+  {
+    "title": "hacksider/Deep-Live-Cam",
+    "url": "https://github.com/hacksider/Deep-Live-Cam",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "real time face swap and one-click video deepfake with only a single image",
+    "author": "hacksider",
+    "published_at": "2026-09-15T11:05:04+00:00",
+    "tags": [],
+    "extra": {
+      "stars": 96660,
+      "forks": 14099,
+      "language": "Python",
+      "topics": [
+        "ai-face",
+        "deepfake",
+        "video-deepfake",
+        "deepfake-webcam",
+        "fake-webcam",
+        "realtime-deepfake",
+        "realtime-face-changer",
+        "faceswap",
+        "webcam",
+        "ai-deep-fake",
+        "ai-webcam",
+        "ai",
+        "artificial-intelligence",
+        "webcamera",
+        "deep-fake",
+        "real-time-deepfake",
+        "gan",
+        "realtime"
+      ]
+    }
+  },
+  {
+    "title": "OpenHands/OpenHands",
+    "url": "https://github.com/OpenHands/OpenHands",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "🙌 OpenHands: AI-Driven Development",
+    "author": "OpenHands",
+    "published_at": "2026-09-15T15:15:48+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 88012,
+      "forks": 11542,
+      "language": "TypeScript",
+      "topics": [
+        "agent",
+        "artificial-intelligence",
+        "llm",
+        "chatgpt",
+        "claude-ai",
+        "cli",
+        "developer-tools",
+        "gpt",
+        "openai"
+      ]
+    }
+  },
+  {
+    "title": "jingyaogong/minimind",
+    "url": "https://github.com/jingyaogong/minimind",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+    "author": "jingyaogong",
+    "published_at": "2026-09-15T06:53:55+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 61201,
+      "forks": 7956,
+      "language": "Python",
+      "topics": [
+        "artificial-intelligence",
+        "large-language-model"
+      ]
+    }
+  },
+  {
+    "title": "Early Anthropic hire, former METR COO have found a way to rein in rogue AI agents",
+    "url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 48.0,
+    "summary": "Their startup, Artificial Intelligence Underwriting Company (AIUC) has raised $40 million in a Series A round led by Ribbit Capital, with participation from First Harmonic.",
+    "author": "Julie Bort",
+    "published_at": "2026-09-15T13:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Discover how to take your startup from prototype to production at TechCrunch Disrupt 2026",
+    "url": "https://techcrunch.com/2026/09/15/discover-how-to-take-your-startup-from-prototype-to-production-at-techcrunch-disrupt-2026/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 45.0,
+    "summary": "Learn how to scale your startup breakthrough from prototype to production at TechCrunch Disrupt 2026 with scaling leaders, Adrian Macneil (Foxglove), John Mackey (MBRYONICS), and Boris Sofman (Bedrock",
+    "author": "TechCrunch Events",
+    "published_at": "2026-09-15T14:30:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Meta expands subscription push with new AI-focused plans",
+    "url": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Meta One bundles expanded access to the company’s AI tools with premium features across Facebook, Instagram and WhatsApp.",
+    "author": "Sarah Perez",
+    "published_at": "2026-09-15T17:05:24+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
+    "url": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China.",
+    "author": "Rebecca Bellan",
+    "published_at": "2026-09-15T15:47:03+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round",
+    "url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Profound has raised a $180 million Series D at a $1.8 billion valuation, less than seven months after it raised a $96 million Series C.",
+    "author": "Dominic-Madori Davis",
+    "published_at": "2026-09-15T15:22:48+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Former TikTok execs built an app that uses AI to teach you how to pose for a photo",
+    "url": "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Essentially a camera app, Superpose analyzes selfies or photos and generates four potential poses using AI.",
+    "author": "Ivan Mehta",
+    "published_at": "2026-09-15T14:42:37+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "4 days left to exhibit at TechCrunch Disrupt 2026",
+    "url": "https://techcrunch.com/2026/09/15/4-days-left-to-exhibit-at-techcrunch-disrupt-2026/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Last day to exhibit at Disrupt is Sept 18. 4 days left. Get your startup in front of 10,000+ founders, investors, operators and tech leaders October 13–15.",
+    "author": "TechCrunch Events",
+    "published_at": "2026-09-15T14:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Salesforce and Nvidia’s new reasoning model is everything the AI labs should fear",
+    "url": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Salesforce Koa is built on Nvidia's open-weight Nemotron model and is trained to do sales, marketing, and customer-support tasks.",
+    "author": "Julie Bort",
+    "published_at": "2026-09-15T12:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Jensen Huang took a call from Trump, and showed off something else, too",
+    "url": "https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "When Jensen Huang took a live call from Trump, some of us were more focused on the phone he used to take it.",
+    "author": "Connie Loizos",
+    "published_at": "2026-09-15T01:50:48+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
+    "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang seems to feel differently.",
+    "author": "Amanda Silberling",
+    "published_at": "2026-09-14T21:51:02+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "What’s at stake in AI’s trillion-dollar gamble",
+    "url": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "When Jessica Wachter, a finance professor at the University of Pennsylvania’s Wharton School, wanted to assess AI’s impact on the economy over the next few years, she faced a long list of business and",
+    "author": "David Rotman",
+    "published_at": "2026-09-15T10:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "MIT Tech Review AI"
+    }
+  },
+  {
+    "title": "The AI industry has taken a doomer turn. What now?",
+    "url": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "This story appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. This weekend, Dario Amodei, CEO of Anthropic, posted an essay callin",
+    "author": "Will Douglas Heaven",
+    "published_at": "2026-09-14T17:54:22+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "MIT Tech Review AI"
+    }
+  }
+]
