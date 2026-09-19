@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Engineer Hotlist</title>
+<style>
+  /* ===== CSS Variables ===== */
+  :root {
+    --bg: #0a0a0f;
+    --bg-card: #12121a;
+    --bg-card-hover: #1a1a2a;
+    --border: #1e1e30;
+    --text: #e0e0f0;
+    --text-muted: #7a7a9a;
+    --text-dim: #4a4a6a;
+    --accent: #6c5ce7;
+    --accent-glow: rgba(108, 92, 231, 0.15);
+    --green: #00d68f;
+    --orange: #ff9f43;
+    --red: #ff6b6b;
+    --blue: #54a0ff;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.3);
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "JetBrains Mono", monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ===== Header ===== */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+  }
+  .header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .logo {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--accent), #a29bfe);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .header h1 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  .header .subtitle {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .update-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    background: var(--accent-glow);
+    border: 1px solid rgba(108, 92, 231, 0.2);
+    border-radius: 100px;
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .update-badge .dot {
+    width: 6px;
+    height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ===== Stats Bar ===== */
+  .stats-bar {
+    max-width: 1400px;
+    margin: 20px auto 0;
+    padding: 0 24px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .stat-item .num {
+    color: var(--text);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ===== Main Layout ===== */
+  .main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 24px 60px;
+  }
+
+  /* ===== Source Sections ===== */
+  .section {
+    margin-bottom: 32px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .section-icon.github { background: #1a1a3a; color: #6e40c9; }
+  .section-icon.hackernews { background: #1a2a1a; color: #ff6600; }
+  .section-icon.reddit { background: #2a1a1a; color: #ff4500; }
+  .section-icon.twitter { background: #1a2a3a; color: #1da1f2; }
+  .section-icon.arxiv { background: #1a1a2a; color: #b31b1b; }
+  .section-icon.media { background: #2a1a2a; color: #ff6b6b; }
+  .section-icon.cn { background: #1a2a1a; color: #00d68f; }
+
+  .section h2 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  .section .count {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--text-dim);
+    font-weight: 400;
+  }
+
+  /* ===== Card Grid ===== */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 12px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    background: var(--bg-card-hover);
+    border-color: rgba(108, 92, 231, 0.3);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+  }
+  .card .score-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+  }
+  .card .score-bar.high { background: var(--green); }
+  .card .score-bar.medium { background: var(--orange); }
+  .card .score-bar.low { background: var(--accent); }
+
+  .card-body {
+    margin-left: 0;
+  }
+  .card-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-title a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    color: var(--accent);
+  }
+  .card-summary {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+  .card-meta .source-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--accent-glow);
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .card-meta .tag {
+    display: inline-flex;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.04);
+    color: var(--text-muted);
+    font-size: 10px;
+    border: 1px solid var(--border);
+  }
+  .card-meta .time {
+    margin-left: auto;
+  }
+  .card-meta .score-num {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .card-meta .score-num.high { color: var(--green); }
+  .card-meta .score-num.medium { color: var(--orange); }
+  .card-meta .score-num.low { color: var(--accent); }
+
+  /* ===== Score = high/medium/low ===== */
+  .score-high .score-bar { background: var(--green); }
+  .score-medium .score-bar { background: var(--orange); }
+  .score-low .score-bar { background: var(--accent); }
+
+  /* ===== Empty State ===== */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-dim);
+  }
+  .empty-state .emoji { font-size: 48px; margin-bottom: 16px; }
+  .empty-state p { font-size: 14px; }
+
+  /* ===== Footer ===== */
+  .footer {
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 12px;
+    color: var(--text-dim);
+    border-top: 1px solid var(--border);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .header { padding: 12px 16px; }
+    .header h1 { font-size: 16px; }
+    .header .subtitle { display: none; }
+    .stats-bar { padding: 0 16px; gap: 8px; }
+    .stat-item { font-size: 11px; padding: 4px 10px; }
+    .main { padding: 16px 16px 40px; }
+    .card-grid { grid-template-columns: 1fr; gap: 10px; }
+    .card { padding: 14px; }
+  }
+  @media (max-width: 480px) {
+    .header-right .update-badge span { display: none; }
+    .section h2 { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-left">
+      <div class="logo">AI</div>
+      <div>
+        <h1>AI Engineer Hotlist</h1>
+        <div class="subtitle">全球 AI 工程热点追踪 · 2026-09-19 16:20</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <span class="update-badge">
+        <span class="dot"></span>
+        <span>14 条热点</span>
+      </span>
+      <span>⚡ 2 个数据源</span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Stats ===== -->
+<div class="stats-bar">
+  
+  <span class="stat-item">
+    <span>GitHub</span>
+    <span class="num">4</span>
+  </span>
+  
+  <span class="stat-item">
+    <span>Tech Media</span>
+    <span class="num">10</span>
+  </span>
+  
+</div>
+
+<!-- ===== Main Content ===== -->
+<main class="main">
+  
+
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon github">📦</div>
+      <h2>GitHub</h2>
+      <span class="count">4 条</span>
+    </div>
+    <div class="card-grid">
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">thedotmack/claude-mem</a>
+          </div>
+          
+          <div class="card-summary">Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              180
+            </span>
+            
+            <span>👤 thedotmack</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-09-19 06:06:13+00:00</span>
+            
+            
+            <span>⭐ 94253</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener">Significant-Gravitas/AutoGPT</a>
+          </div>
+          
+          <div class="card-summary">AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 Significant-Gravitas</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-09-19 12:11:32+00:00</span>
+            
+            
+            <span>⭐ 187442</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/OpenHands/OpenHands" target="_blank" rel="noopener">OpenHands/OpenHands</a>
+          </div>
+          
+          <div class="card-summary">🙌 OpenHands: AI-Driven Development</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 OpenHands</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-09-19 13:03:21+00:00</span>
+            
+            
+            <span>⭐ 88512</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/usestrix/strix" target="_blank" rel="noopener">usestrix/strix</a>
+          </div>
+          
+          <div class="card-summary">Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 usestrix</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-09-18 18:39:39+00:00</span>
+            
+            
+            <span>⭐ 63669</span>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon media_rss">📰</div>
+      <h2>Tech Media</h2>
+      <span class="count">10 条</span>
+    </div>
+    <div class="card-grid">
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/" target="_blank" rel="noopener">Vals, backed by Andreessen Horowitz, is looking to become the gold standard for AI benchmarking</a>
+          </div>
+          
+          <div class="card-summary">Vals AI is hoping to make AI benchmarking a more neutral and trustworthy resource in a world increasingly inundated by AI models.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              36
+            </span>
+            
+            <span>👤 Lucas Ropek</span>
+            
+            
+            
+            <span class="time">2026-09-19 13:00:00+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/19/ai-safety-conversations-have-gotten-unbelievable/" target="_blank" rel="noopener">AI safety conversations have gotten unbelievable</a>
+          </div>
+          
+          <div class="card-summary">This week two conversations about AI safety went viral that demonstrate just how hard it is to discern AI fact from fiction.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Julie Bort</span>
+            
+            
+            
+            <span class="time">2026-09-19 15:00:00+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/" target="_blank" rel="noopener">Petlibro’s new AI-powered feeder is a game changer for multi-cat homes</a>
+          </div>
+          
+          <div class="card-summary">Petlibro's new Granary 2 smart feeders use a built-in scale and (on pricier models) an AI camera to track exactly how much your cat is eating and when — though the fanciest health-monitoring features will cost you an extra subscription.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Lauren Forristal</span>
+            
+            
+            
+            <span class="time">2026-09-19 15:00:00+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/19/prices-go-up-in-7-days-get-your-disrupt-ticket-now/" target="_blank" rel="noopener">Prices go up in 7 days. Get your Disrupt ticket now.</a>
+          </div>
+          
+          <div class="card-summary">Current ticket pricing ends Sept. 25 at 11:59 p.m. PT. Join 10,000+ founders, investors and tech leaders at Disrupt and save up to $200 on your ticket until then..</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 TechCrunch Events</span>
+            
+            
+            
+            <span class="time">2026-09-19 14:00:00+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/" target="_blank" rel="noopener">India forces caller-ID apps to feed spam reports to telcos</a>
+          </div>
+          
+          <div class="card-summary">Truecaller says the one-way sharing requirement would hand a commercially valuable proprietary asset to telecom operators.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Jagmeet Singh</span>
+            
+            
+            
+            <span class="time">2026-09-19 01:00:00+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/18/tilly-norwoods-press-tour-is-going-about-as-well-as-youd-expect-for-an-ai/" target="_blank" rel="noopener">Tilly Norwood’s press tour is going about as well as you’d expect for an AI</a>
+          </div>
+          
+          <div class="card-summary">In one particularly odd interview, Norwood seems to malfunction and begin speaking Chinese.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Amanda Silberling</span>
+            
+            
+            
+            <span class="time">2026-09-19 00:12:07+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/" target="_blank" rel="noopener">A startup that builds other startups raised $100M and is all-in on physical AI</a>
+          </div>
+          
+          <div class="card-summary">UP.Labs, now doing business under the name Vantora, is building startups for industrial corporations.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Kirsten Korosec</span>
+            
+            
+            
+            <span class="time">2026-09-18 23:25:01+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/" target="_blank" rel="noopener">Anthropic is operating a lab that conducts biology experiments</a>
+          </div>
+          
+          <div class="card-summary">AI leaders have been promising that AI is the key to curing human disease. Anthropic researchers have also been warning that AI might kill us all.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Julie Bort</span>
+            
+            
+            
+            <span class="time">2026-09-18 23:13:31+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/" target="_blank" rel="noopener">AI hallucination nearly triggers US military operation</a>
+          </div>
+          
+          <div class="card-summary">“It’s important for service members to understand the uncertainty inherent to LLMs," a GovAI research scholar warns.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Aditya Mehta</span>
+            
+            
+            
+            <span class="time">2026-09-18 23:12:32+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/" target="_blank" rel="noopener">Anthropic’s first embedded evaluator is … Accenture?</a>
+          </div>
+          
+          <div class="card-summary">Accenture is about to take on its most high-risk consulting engagement ever.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Tim Fernholz</span>
+            
+            
+            
+            <span class="time">2026-09-18 21:44:33+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</main>
+
+<footer class="footer">
+  <p>🤖 由 <a href="https://github.com" target="_blank">AI Engineer Hotlist</a> 自动生成 · 数据来源: GitHub · Hacker News · Reddit · Twitter · arXiv · RSS · 中文社区</p>
+  <p style="margin-top:4px;">2026-09-19 16:20 UTC · 每日自动更新</p>
+</footer>
+
+</body>
+</html>

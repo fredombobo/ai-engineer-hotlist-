@@ -1,0 +1,282 @@
+[
+  {
+    "title": "thedotmack/claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 180.0,
+    "summary": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla",
+    "author": "thedotmack",
+    "published_at": "2026-09-19T06:06:13+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 94253,
+      "forks": 8320,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-memory",
+        "anthropic",
+        "artificial-intelligence",
+        "claude",
+        "claude-agent-sdk",
+        "claude-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "long-term-memory",
+        "mem0",
+        "openmemory",
+        "supermemory",
+        "chromadb",
+        "sqlite",
+        "embeddings",
+        "memory-engine",
+        "rag"
+      ]
+    }
+  },
+  {
+    "title": "Significant-Gravitas/AutoGPT",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+    "author": "Significant-Gravitas",
+    "published_at": "2026-09-19T12:11:32+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 187442,
+      "forks": 46006,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "openai",
+        "python",
+        "artificial-intelligence",
+        "autonomous-agents",
+        "llama-api",
+        "agentic-ai",
+        "agents",
+        "llm",
+        "claude",
+        "gpt"
+      ]
+    }
+  },
+  {
+    "title": "OpenHands/OpenHands",
+    "url": "https://github.com/OpenHands/OpenHands",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "🙌 OpenHands: AI-Driven Development",
+    "author": "OpenHands",
+    "published_at": "2026-09-19T13:03:21+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 88512,
+      "forks": 11627,
+      "language": "TypeScript",
+      "topics": [
+        "agent",
+        "artificial-intelligence",
+        "llm",
+        "chatgpt",
+        "claude-ai",
+        "cli",
+        "developer-tools",
+        "gpt",
+        "openai"
+      ]
+    }
+  },
+  {
+    "title": "usestrix/strix",
+    "url": "https://github.com/usestrix/strix",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+    "author": "usestrix",
+    "published_at": "2026-09-18T18:39:39+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 63669,
+      "forks": 6957,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "artificial-intelligence",
+        "cybersecurity",
+        "penetration-testing",
+        "ai-penetration-testing",
+        "ai-pentesting",
+        "ai-security",
+        "bug-bounty",
+        "ctf-tools",
+        "cybersecurity-tools",
+        "ethical-hacking",
+        "llm-security",
+        "offensive-security",
+        "pentesting-tools",
+        "red-teaming",
+        "security-automation",
+        "security",
+        "code-quality",
+        "ai-hacking",
+        "hacking"
+      ]
+    }
+  },
+  {
+    "title": "Vals, backed by Andreessen Horowitz, is looking to become the gold standard for AI benchmarking",
+    "url": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 36.0,
+    "summary": "Vals AI is hoping to make AI benchmarking a more neutral and trustworthy resource in a world increasingly inundated by AI models.",
+    "author": "Lucas Ropek",
+    "published_at": "2026-09-19T13:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "AI safety conversations have gotten unbelievable",
+    "url": "https://techcrunch.com/2026/09/19/ai-safety-conversations-have-gotten-unbelievable/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "This week two conversations about AI safety went viral that demonstrate just how hard it is to discern AI fact from fiction.",
+    "author": "Julie Bort",
+    "published_at": "2026-09-19T15:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Petlibro’s new AI-powered feeder is a game changer for multi-cat homes",
+    "url": "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Petlibro's new Granary 2 smart feeders use a built-in scale and (on pricier models) an AI camera to track exactly how much your cat is eating and when — though the fanciest health-monitoring features ",
+    "author": "Lauren Forristal",
+    "published_at": "2026-09-19T15:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Prices go up in 7 days. Get your Disrupt ticket now.",
+    "url": "https://techcrunch.com/2026/09/19/prices-go-up-in-7-days-get-your-disrupt-ticket-now/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Current ticket pricing ends Sept. 25 at 11:59 p.m. PT. Join 10,000+ founders, investors and tech leaders at Disrupt and save up to $200 on your ticket until then..",
+    "author": "TechCrunch Events",
+    "published_at": "2026-09-19T14:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "India forces caller-ID apps to feed spam reports to telcos",
+    "url": "https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Truecaller says the one-way sharing requirement would hand a commercially valuable proprietary asset to telecom operators.",
+    "author": "Jagmeet Singh",
+    "published_at": "2026-09-19T01:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Tilly Norwood’s press tour is going about as well as you’d expect for an AI",
+    "url": "https://techcrunch.com/2026/09/18/tilly-norwoods-press-tour-is-going-about-as-well-as-youd-expect-for-an-ai/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "In one particularly odd interview, Norwood seems to malfunction and begin speaking Chinese.",
+    "author": "Amanda Silberling",
+    "published_at": "2026-09-19T00:12:07+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "A startup that builds other startups raised $100M and is all-in on physical AI",
+    "url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "UP.Labs, now doing business under the name Vantora, is building startups for industrial corporations.",
+    "author": "Kirsten Korosec",
+    "published_at": "2026-09-18T23:25:01+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Anthropic is operating a lab that conducts biology experiments",
+    "url": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "AI leaders have been promising that AI is the key to curing human disease. Anthropic researchers have also been warning that AI might kill us all.",
+    "author": "Julie Bort",
+    "published_at": "2026-09-18T23:13:31+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "AI hallucination nearly triggers US military operation",
+    "url": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "“It’s important for service members to understand the uncertainty inherent to LLMs,\" a GovAI research scholar warns.",
+    "author": "Aditya Mehta",
+    "published_at": "2026-09-18T23:12:32+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Anthropic’s first embedded evaluator is … Accenture?",
+    "url": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Accenture is about to take on its most high-risk consulting engagement ever.",
+    "author": "Tim Fernholz",
+    "published_at": "2026-09-18T21:44:33+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  }
+]
