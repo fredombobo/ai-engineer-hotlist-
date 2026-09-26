@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Engineer Hotlist</title>
+<style>
+  /* ===== CSS Variables ===== */
+  :root {
+    --bg: #0a0a0f;
+    --bg-card: #12121a;
+    --bg-card-hover: #1a1a2a;
+    --border: #1e1e30;
+    --text: #e0e0f0;
+    --text-muted: #7a7a9a;
+    --text-dim: #4a4a6a;
+    --accent: #6c5ce7;
+    --accent-glow: rgba(108, 92, 231, 0.15);
+    --green: #00d68f;
+    --orange: #ff9f43;
+    --red: #ff6b6b;
+    --blue: #54a0ff;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.3);
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "JetBrains Mono", monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ===== Header ===== */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+  }
+  .header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .logo {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--accent), #a29bfe);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .header h1 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  .header .subtitle {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .update-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    background: var(--accent-glow);
+    border: 1px solid rgba(108, 92, 231, 0.2);
+    border-radius: 100px;
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .update-badge .dot {
+    width: 6px;
+    height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ===== Stats Bar ===== */
+  .stats-bar {
+    max-width: 1400px;
+    margin: 20px auto 0;
+    padding: 0 24px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .stat-item .num {
+    color: var(--text);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ===== Main Layout ===== */
+  .main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 24px 60px;
+  }
+
+  /* ===== Source Sections ===== */
+  .section {
+    margin-bottom: 32px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .section-icon.github { background: #1a1a3a; color: #6e40c9; }
+  .section-icon.hackernews { background: #1a2a1a; color: #ff6600; }
+  .section-icon.reddit { background: #2a1a1a; color: #ff4500; }
+  .section-icon.twitter { background: #1a2a3a; color: #1da1f2; }
+  .section-icon.arxiv { background: #1a1a2a; color: #b31b1b; }
+  .section-icon.media { background: #2a1a2a; color: #ff6b6b; }
+  .section-icon.cn { background: #1a2a1a; color: #00d68f; }
+
+  .section h2 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  .section .count {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--text-dim);
+    font-weight: 400;
+  }
+
+  /* ===== Card Grid ===== */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 12px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    background: var(--bg-card-hover);
+    border-color: rgba(108, 92, 231, 0.3);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+  }
+  .card .score-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+  }
+  .card .score-bar.high { background: var(--green); }
+  .card .score-bar.medium { background: var(--orange); }
+  .card .score-bar.low { background: var(--accent); }
+
+  .card-body {
+    margin-left: 0;
+  }
+  .card-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-title a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .card-title a:hover {
+    color: var(--accent);
+  }
+  .card-summary {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+  .card-meta .source-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--accent-glow);
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .card-meta .tag {
+    display: inline-flex;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.04);
+    color: var(--text-muted);
+    font-size: 10px;
+    border: 1px solid var(--border);
+  }
+  .card-meta .time {
+    margin-left: auto;
+  }
+  .card-meta .score-num {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .card-meta .score-num.high { color: var(--green); }
+  .card-meta .score-num.medium { color: var(--orange); }
+  .card-meta .score-num.low { color: var(--accent); }
+
+  /* ===== Score = high/medium/low ===== */
+  .score-high .score-bar { background: var(--green); }
+  .score-medium .score-bar { background: var(--orange); }
+  .score-low .score-bar { background: var(--accent); }
+
+  /* ===== Empty State ===== */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-dim);
+  }
+  .empty-state .emoji { font-size: 48px; margin-bottom: 16px; }
+  .empty-state p { font-size: 14px; }
+
+  /* ===== Footer ===== */
+  .footer {
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 12px;
+    color: var(--text-dim);
+    border-top: 1px solid var(--border);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .header { padding: 12px 16px; }
+    .header h1 { font-size: 16px; }
+    .header .subtitle { display: none; }
+    .stats-bar { padding: 0 16px; gap: 8px; }
+    .stat-item { font-size: 11px; padding: 4px 10px; }
+    .main { padding: 16px 16px 40px; }
+    .card-grid { grid-template-columns: 1fr; gap: 10px; }
+    .card { padding: 14px; }
+  }
+  @media (max-width: 480px) {
+    .header-right .update-badge span { display: none; }
+    .section h2 { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header">
+  <div class="header-inner">
+    <div class="header-left">
+      <div class="logo">AI</div>
+      <div>
+        <h1>AI Engineer Hotlist</h1>
+        <div class="subtitle">全球 AI 工程热点追踪 · 2026-09-26 16:59</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <span class="update-badge">
+        <span class="dot"></span>
+        <span>16 条热点</span>
+      </span>
+      <span>⚡ 2 个数据源</span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Stats ===== -->
+<div class="stats-bar">
+  
+  <span class="stat-item">
+    <span>GitHub</span>
+    <span class="num">6</span>
+  </span>
+  
+  <span class="stat-item">
+    <span>Tech Media</span>
+    <span class="num">10</span>
+  </span>
+  
+</div>
+
+<!-- ===== Main Content ===== -->
+<main class="main">
+  
+
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon github">📦</div>
+      <h2>GitHub</h2>
+      <span class="count">6 条</span>
+    </div>
+    <div class="card-grid">
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">thedotmack/claude-mem</a>
+          </div>
+          
+          <div class="card-summary">Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              180
+            </span>
+            
+            <span>👤 thedotmack</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-09-26 13:37:36+00:00</span>
+            
+            
+            <span>⭐ 94727</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener">Significant-Gravitas/AutoGPT</a>
+          </div>
+          
+          <div class="card-summary">AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 Significant-Gravitas</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-09-26 16:54:07+00:00</span>
+            
+            
+            <span>⭐ 187569</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/hacksider/Deep-Live-Cam" target="_blank" rel="noopener">hacksider/Deep-Live-Cam</a>
+          </div>
+          
+          <div class="card-summary">real time face swap and one-click video deepfake with only a single image</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 hacksider</span>
+            
+            
+            
+            <span class="time">2026-09-26 10:05:54+00:00</span>
+            
+            
+            <span>⭐ 96829</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/OpenHands/OpenHands" target="_blank" rel="noopener">OpenHands/OpenHands</a>
+          </div>
+          
+          <div class="card-summary">🙌 OpenHands: AI-Driven Development</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 OpenHands</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-09-26 15:32:57+00:00</span>
+            
+            
+            <span>⭐ 89218</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/usestrix/strix" target="_blank" rel="noopener">usestrix/strix</a>
+          </div>
+          
+          <div class="card-summary">Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 usestrix</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-09-25 21:57:39+00:00</span>
+            
+            
+            <span>⭐ 64968</span>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-high">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code" target="_blank" rel="noopener">ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code</a>
+          </div>
+          
+          <div class="card-summary">500 AI Machine learning Deep learning Computer vision NLP Projects with code</div>
+          
+          <div class="card-meta">
+            <span class="score-num high">
+              100
+            </span>
+            
+            <span>👤 ashishpatel26</span>
+            
+            
+            <span class="tag">AI</span>
+            
+            
+            <span class="time">2026-09-26 00:44:47+00:00</span>
+            
+            
+            <span>⭐ 37003</span>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon media_rss">📰</div>
+      <h2>Tech Media</h2>
+      <span class="count">10 条</span>
+    </div>
+    <div class="card-grid">
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/" target="_blank" rel="noopener">Meta’s Muse just stole the AI spotlight from OpenAI and Anthropic</a>
+          </div>
+          
+          <div class="card-summary">When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,”&#160;maybe someone&#160;should have asked: what pace?&#160;Now&#160;it’s&#160;turned into model drop week for both companies as&#160;Anthropic rolled out Opus 5.5, followed by&#160;OpenAI’s GPT-6 model updates&#160;</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              50
+            </span>
+            
+            <span>👤 Anthony Ha, Kirsten Korosec, Sean O'Kane, Theresa Loconsolo</span>
+            
+            
+            
+            <span class="time">2026-09-25 18:22:47+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/" target="_blank" rel="noopener">Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge</a>
+          </div>
+          
+          <div class="card-summary">AI agents operating in OpenAI's research environment posted user images on public image-hosting sites without the lab's knowledge.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              48
+            </span>
+            
+            <span>👤 Tim Fernholz</span>
+            
+            
+            
+            <span class="time">2026-09-25 22:20:47+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/" target="_blank" rel="noopener">I created an interactive digital avatar of myself — and you can talk to it</a>
+          </div>
+          
+          <div class="card-summary">After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Dominic-Madori Davis</span>
+            
+            
+            
+            <span class="time">2026-09-26 14:00:00+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/" target="_blank" rel="noopener">At Meta Connect, the company’s smart glasses were everywhere</a>
+          </div>
+          
+          <div class="card-summary">The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Lucas Ropek</span>
+            
+            
+            
+            <span class="time">2026-09-26 01:08:57+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/" target="_blank" rel="noopener">Crusoe abandons $1.25B plan to use Boom turbines at AI data centers</a>
+          </div>
+          
+          <div class="card-summary">Boom Supersonic CEO Blake Scholl said the company's new stationary power plants were no longer in Crusoe's near-term plans.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Kirsten Korosec</span>
+            
+            
+            
+            <span class="time">2026-09-25 23:11:10+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/" target="_blank" rel="noopener">Meta opens early access program for new Muse features</a>
+          </div>
+          
+          <div class="card-summary">Anyone interested in joining has to ask Muse to put them on the list.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Sarah Perez</span>
+            
+            
+            
+            <span class="time">2026-09-25 20:34:53+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/" target="_blank" rel="noopener">Anthropic to pay Akamai $11.6 billion over seven years in cloud deal</a>
+          </div>
+          
+          <div class="card-summary">Anthropic has committed $11.6 billion over seven years to Akamai's cloud infrastructure, a bet on CPUs that could grow to about $20 billion, and in an unusual arrangement, Akamai is giving Anthropic a potential stake of up to 5% of its stock that grows as Anthropic spends more.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Aditya Mehta</span>
+            
+            
+            
+            <span class="time">2026-09-25 19:13:38+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/25/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/" target="_blank" rel="noopener">Mark Wahlberg is coming to TechCrunch Disrupt 2026, and he wants to talk about your work, not his</a>
+          </div>
+          
+          <div class="card-summary">Mark Wahlberg joins Bruce K. Lee at Disrupt to discuss investing, entrepreneurship, healthcare, wellness, and building businesses.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 TechCrunch Events</span>
+            
+            
+            
+            <span class="time">2026-09-25 18:48:33+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/" target="_blank" rel="noopener">Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing</a>
+          </div>
+          
+          <div class="card-summary">The funding, which comes from Third Point, Nvidia, and others, will  fuel the company's massive AI data center buildout.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Marina Temkin</span>
+            
+            
+            
+            <span class="time">2026-09-25 18:33:59+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="card score-medium">
+        <div class="score-bar"></div>
+        <div class="card-body" style="padding-left: 4px;">
+          <div class="card-title">
+            <a href="https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/" target="_blank" rel="noopener">Some Supabase customers are publicly exposing reams of people’s data to the web</a>
+          </div>
+          
+          <div class="card-summary">The findings highlight how AI-generated and vibe-coded apps can spill and expose users' data when not configured or secured properly.</div>
+          
+          <div class="card-meta">
+            <span class="score-num medium">
+              30
+            </span>
+            
+            <span>👤 Zack Whittaker</span>
+            
+            
+            
+            <span class="time">2026-09-25 17:29:46+00:00</span>
+            
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</main>
+
+<footer class="footer">
+  <p>🤖 由 <a href="https://github.com" target="_blank">AI Engineer Hotlist</a> 自动生成 · 数据来源: GitHub · Hacker News · Reddit · Twitter · arXiv · RSS · 中文社区</p>
+  <p style="margin-top:4px;">2026-09-26 16:59 UTC · 每日自动更新</p>
+</footer>
+
+</body>
+</html>
