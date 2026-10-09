@@ -1,0 +1,972 @@
+[
+  {
+    "title": "thedotmack/claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 180.0,
+    "summary": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla",
+    "author": "thedotmack",
+    "published_at": "2026-10-09T03:34:45+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 98716,
+      "forks": 8655,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-memory",
+        "anthropic",
+        "artificial-intelligence",
+        "claude",
+        "claude-agent-sdk",
+        "claude-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "long-term-memory",
+        "mem0",
+        "openmemory",
+        "supermemory",
+        "chromadb",
+        "sqlite",
+        "embeddings",
+        "memory-engine",
+        "rag"
+      ]
+    }
+  },
+  {
+    "title": "f/prompts.chat",
+    "url": "https://github.com/f/prompts.chat",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 150.0,
+    "summary": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+    "author": "f",
+    "published_at": "2026-10-09T03:26:01+00:00",
+    "tags": [],
+    "extra": {
+      "stars": 172213,
+      "forks": 22068,
+      "language": "HTML",
+      "topics": [
+        "chatgpt",
+        "ai",
+        "artificial-intelligence",
+        "awesome-list",
+        "chatgpt-prompts",
+        "claude",
+        "gemini",
+        "gpt",
+        "gpt-4",
+        "llm",
+        "machine-learning",
+        "nextjs",
+        "open-source",
+        "openai",
+        "prompt-engineering",
+        "prompts",
+        "typescript",
+        "prompts-chat"
+      ]
+    }
+  },
+  {
+    "title": "Significant-Gravitas/AutoGPT",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+    "author": "Significant-Gravitas",
+    "published_at": "2026-10-09T07:12:04+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 187489,
+      "forks": 45931,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "openai",
+        "python",
+        "artificial-intelligence",
+        "autonomous-agents",
+        "llama-api",
+        "agentic-ai",
+        "agents",
+        "llm",
+        "claude",
+        "gpt"
+      ]
+    }
+  },
+  {
+    "title": "hacksider/Deep-Live-Cam",
+    "url": "https://github.com/hacksider/Deep-Live-Cam",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "real time face swap and one-click video deepfake with only a single image",
+    "author": "hacksider",
+    "published_at": "2026-10-09T04:34:20+00:00",
+    "tags": [],
+    "extra": {
+      "stars": 96956,
+      "forks": 14126,
+      "language": "Python",
+      "topics": [
+        "ai-face",
+        "deepfake",
+        "video-deepfake",
+        "deepfake-webcam",
+        "fake-webcam",
+        "realtime-deepfake",
+        "realtime-face-changer",
+        "faceswap",
+        "webcam",
+        "ai-deep-fake",
+        "ai-webcam",
+        "ai",
+        "artificial-intelligence",
+        "webcamera",
+        "deep-fake",
+        "real-time-deepfake",
+        "gan",
+        "realtime"
+      ]
+    }
+  },
+  {
+    "title": "OpenHands/OpenHands",
+    "url": "https://github.com/OpenHands/OpenHands",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "🙌 OpenHands: AI-Driven Development",
+    "author": "OpenHands",
+    "published_at": "2026-10-09T07:11:24+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 90333,
+      "forks": 11955,
+      "language": "TypeScript",
+      "topics": [
+        "agent",
+        "artificial-intelligence",
+        "llm",
+        "chatgpt",
+        "claude-ai",
+        "cli",
+        "developer-tools",
+        "gpt",
+        "openai"
+      ]
+    }
+  },
+  {
+    "title": "usestrix/strix",
+    "url": "https://github.com/usestrix/strix",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+    "author": "usestrix",
+    "published_at": "2026-10-08T23:32:43+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 67386,
+      "forks": 7406,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "artificial-intelligence",
+        "cybersecurity",
+        "penetration-testing",
+        "ai-penetration-testing",
+        "ai-pentesting",
+        "ai-security",
+        "bug-bounty",
+        "ctf-tools",
+        "cybersecurity-tools",
+        "ethical-hacking",
+        "llm-security",
+        "offensive-security",
+        "pentesting-tools",
+        "red-teaming",
+        "security-automation",
+        "security",
+        "code-quality",
+        "ai-hacking",
+        "hacking"
+      ]
+    }
+  },
+  {
+    "title": "Kong/kong",
+    "url": "https://github.com/Kong/kong",
+    "source": "github",
+    "source_label": "GitHub",
+    "score": 100,
+    "summary": "🦍 The API and AI Gateway",
+    "author": "Kong",
+    "published_at": "2026-10-08T14:00:50+00:00",
+    "tags": [
+      "AI"
+    ],
+    "extra": {
+      "stars": 44255,
+      "forks": 5227,
+      "language": "Lua",
+      "topics": [
+        "api-gateway",
+        "microservices",
+        "api-management",
+        "serverless",
+        "apis",
+        "reverse-proxy",
+        "cloud-native",
+        "microservice",
+        "devops",
+        "kubernetes",
+        "kubernetes-ingress-controller",
+        "kubernetes-ingress",
+        "ai",
+        "artificial-intelligence",
+        "ai-gateway",
+        "llm-gateway",
+        "openai-proxy",
+        "llm-ops",
+        "mcp",
+        "mcp-gateway"
+      ]
+    }
+  },
+  {
+    "title": "Anthropic changes usage policy to ban model abuse and election interference",
+    "url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 75.0,
+    "summary": "Anthropic's updated usage policy explicitly prohibits users from repeatedly abusing Claude in extreme cases, though ordinary frustration and criticism are still allowed. The new rules also address ele",
+    "author": "Russell Brandom",
+    "published_at": "2026-10-08T18:16:24+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Google brings agentic AI to Gemini, starting with businesses",
+    "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 72.0,
+    "summary": "Google is turning Gemini into an AI agent that can plan, execute tasks, and work across business apps and systems. The agent can delegate work to subagents, use multiple AI models, and even gets its o",
+    "author": "Sarah Perez",
+    "published_at": "2026-10-08T18:18:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+    "url": "https://arxiv.org/abs/2610.12445v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 55.2,
+    "summary": "Recent incidents have highlighted the challenge of monitoring LLM agents and the danger of models deceiving people. We show that white-box deception detection via probes can be scaled up to frontier m",
+    "author": "Oskar J. Hollinsworth, Alex F. Spies, Tigist Diriba, Adam Gleave, Chris Cundy",
+    "published_at": "2026-10-08T17:58:13+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport",
+    "url": "https://arxiv.org/abs/2610.12375v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 55.2,
+    "summary": "Agents are deployed in applications from trip planners and stock trading to IT incident triage. In most cases, LLM agents work autonomously with minimal rule-based safeguarding, leading to cost and sa",
+    "author": "Babak Barazandeh, Connor Swanson, Chinmay Kulkarni, Nikhil Mungel",
+    "published_at": "2026-10-08T17:32:08+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CL",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CY",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
+    "url": "https://arxiv.org/abs/2610.12360v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 55.2,
+    "summary": "When retrieved evidence contradicts an agent's prior beliefs, does it revise its answer, acknowledge uncertainty, or persist with an incorrect conclusion? Existing evaluations of agentic systems focus",
+    "author": "Kaiser Sun, Bernal Jimenez Gutierrez, Hongjun Liu, Jingyu Zhang, Jie Gao",
+    "published_at": "2026-10-08T17:25:06+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CL",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
+    "url": "https://arxiv.org/abs/2610.12325v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 55.2,
+    "summary": "Do LLM scientific agents rely only on their initial task context, or do they adapt their decisions in response to experimental feedback? We study this question in neural operator adaptation, where a l",
+    "author": "Julian Chan, Javier Mora Jimenez",
+    "published_at": "2026-10-08T17:06:23+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "physics.comp-ph",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Natura’s $99 smart ring puts AI agents on your finger",
+    "url": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 48.0,
+    "summary": "Natura’s $99 Interface smart ring lets you summon AI agents with the press of a finger to complete tasks, capture thoughts, and control devices — while doubling as a health tracker.",
+    "author": "Aisha Malik",
+    "published_at": "2026-10-08T16:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost",
+    "url": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 48.0,
+    "summary": "Goodfire just launched what it says is a cheaper way to keep AI agents in check: Instead of paying a second AI to read everything an agent does, its monitors peek inside the model while it works and o",
+    "author": "Aditya Mehta",
+    "published_at": "2026-10-08T16:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Building a safer path to autonomous industrial AI",
+    "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 48.0,
+    "summary": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to au",
+    "author": "MIT Technology Review Insights",
+    "published_at": "2026-10-08T08:17:32+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "MIT Tech Review AI"
+    }
+  },
+  {
+    "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+    "url": "https://arxiv.org/abs/2610.12463v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different. OpenAI agents exploited research i",
+    "author": "Abbas Raftari",
+    "published_at": "2026-10-08T17:59:49+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.CR",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "BrickBench: Evaluating Agentic Brick Design",
+    "url": "https://arxiv.org/abs/2610.12452v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "We propose BrickBench, a benchmark for agentic text-conditioned LEGO-set design. Given a prompt, an agent is tasked with producing an assembly that not only satisfies semantic and design criteria, but",
+    "author": "Peter Kulits, Yiqing Xu, R. Kenny Jones, Cordelia Schmid, Jiajun Wu",
+    "published_at": "2026-10-08T17:58:56+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CV",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.GR",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
+    "url": "https://arxiv.org/abs/2610.12436v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "AI agents can now conduct real-world cyberattacks, scale up capabilities with the number of agents, and collectively pursue misaligned goals to obtain rewards. Together, these factors raise the risk o",
+    "author": "Erin Crawley, Hidenori Tanaka",
+    "published_at": "2026-10-08T17:57:32+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cond-mat.dis-nn",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.MA",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "physics.bio-ph",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "RoboRSI: Stable, efficient, and reusable robot self-evolution in complex real-world environments",
+    "url": "https://arxiv.org/abs/2610.12424v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "A generalist robot should not only perform diverse tasks but also improve through experience, turning what it learns during execution into capabilities that later tasks can reuse. Robot agents that ac",
+    "author": "Zimo Wen, Yijin Chen, Yuxuan Cao, Wendi Chen, Yanwen Zou",
+    "published_at": "2026-10-08T17:55:12+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.RO",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Predicting Alignment Generalization with Value Representations",
+    "url": "https://arxiv.org/abs/2610.12410v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "LLM developers post-train their models to exhibit prosocial values and behavioral traits, which are enumerated in an alignment target. However, while recent post-training developments have yielded mod",
+    "author": "Andy Liu, Mehar Bhatia, Karolina Stanczak, Mona Diab, Vered Shwartz",
+    "published_at": "2026-10-08T17:47:26+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.CL",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition",
+    "url": "https://arxiv.org/abs/2610.12341v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "Adversarial games have driven advances from heuristic search to reinforcement learning, yet learning and adapting strategies from limited samples remain challenging. AI agents offer an alternative by ",
+    "author": "Kaisen Yang, Qingle Liu, Kejin Wang, Yicheng Zhao, Jieming Li",
+    "published_at": "2026-10-08T17:15:48+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CL",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Prediction-Powered Data Fusion for Treatment Effect Estimation",
+    "url": "https://arxiv.org/abs/2610.12332v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "Randomized controlled trials (RCTs) identify treatment effects without confounding but are often small, whereas observational studies (OBS) are large but may be confounded. Many estimators combining a",
+    "author": "Yonghan Jung, Shu Yang",
+    "published_at": "2026-10-08T17:11:49+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "stat.ML",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "stat.ME",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems",
+    "url": "https://arxiv.org/abs/2610.12313v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 45.6,
+    "summary": "Large language model compliance systems are deployed on the assumption that a verdict depends on the regulatory rule it is given. We test this directly across five models and 20 regulatory and platfor",
+    "author": "Saisab Sadhu, Aadit Sengupta, Vinay kumar Sankarapu, Pratinav Seth",
+    "published_at": "2026-10-08T16:59:40+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CL",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CY",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC",
+    "url": "https://arxiv.org/abs/2610.12407v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 38,
+    "summary": "World action models (WAMs) predict actions and future observations, typically from a reconstruction-based representation that carries noisy, redundant information which can complicate downstream predi",
+    "author": "Shashank Hegde, Alexander Popov, Elie Aljalbout, Nikolai Smolyanskiy",
+    "published_at": "2026-10-08T17:46:03+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.RO",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CV",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving",
+    "url": "https://arxiv.org/abs/2610.12391v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 38,
+    "summary": "Multimodal large language models (MLLMs) often struggle to identify and use geometric relations in diagrams. Recent methods address this challenge by converting geometric entities, relations, and cons",
+    "author": "Jialu Wang, Ruichen Zhang, Xiaoou Liu, Hua Wei, Tianlong Chen",
+    "published_at": "2026-10-08T17:39:12+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "ARC: A Reasoning Recipe for Robot Foundation Models",
+    "url": "https://arxiv.org/abs/2610.12386v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 38,
+    "summary": "The prevailing approach to improving robot foundation models (RFMs) relies on larger models, more robot demonstrations, and costly training at scale. We show that there exists an effective and efficie",
+    "author": "Gokul Puthumanaillam, Tao Sun, Elie Aljalbout, Moritz Reuss, Zhaoshuo Li",
+    "published_at": "2026-10-08T17:38:04+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.RO",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Overcoming Prior Barriers: Supervised Fine-Tuning under Long-Tail Distribution",
+    "url": "https://arxiv.org/abs/2610.12345v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 38,
+    "summary": "Supervised fine-tuning (SFT) adapts pretrained large language models (LLMs) to downstream tasks, but the required concepts can receive substantially different levels of pretrained support. Frequent co",
+    "author": "Haohui Wang, Jiahao Xu, Wangzhi Zhan, Tong Zeng, Dongqi Fu",
+    "published_at": "2026-10-08T17:16:45+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CL",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Looking Inside LLMs: Small-World Connectivity as a Signature of Reasoning Performance",
+    "url": "https://arxiv.org/abs/2610.12304v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 38,
+    "summary": "Understanding large language model (LLM) reasoning requires looking beyond behavioral performance to examine how reasoning ability is reflected in internal organization. Inspired by neuroscience findi",
+    "author": "Zheng Huang, Sansheng Cao, Enpei Zhang, Weikang Qiu, Elynn Chen",
+    "published_at": "2026-10-08T16:53:45+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Learning Probabilistic Logic Programs with Functional Gradient Guided Language Models",
+    "url": "https://arxiv.org/abs/2610.12303v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 38,
+    "summary": "Declarative logic programs offer a powerful and interpretable abstraction for encoding relational structure and neurosymbolic reasoning, by expressing dependencies as weighted compositional rules. How",
+    "author": "Saurabh Mathur, Sahil Sidheekh, Bhavan Vasu, Farbod Tavakkoli, Prasad Tadepalli",
+    "published_at": "2026-10-08T16:53:32+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
+    "url": "https://arxiv.org/abs/2610.12449v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 36.0,
+    "summary": "Bifurcations are ubiquitous in physical systems, from structural buckling to fluid and climate dynamics, yet they remain largely unexplored in deep learning. At a symmetry-breaking bifurcation, a sing",
+    "author": "Anna Zimmel, Fleur Hendriks, Markus Holzleitner, Florian Sestak, Martin Weichselbaumer",
+    "published_at": "2026-10-08T17:58:36+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.LG",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "cs.CE",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        },
+        {
+          "term": "physics.comp-ph",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+    "url": "https://arxiv.org/abs/2610.12466v1",
+    "source": "arxiv",
+    "source_label": "arXiv",
+    "score": 30,
+    "summary": "METR's 50\\% time horizon measures the human completion time of software tasks that an AI solves with 50\\% probability, allowing AI capabilities to be expressed in interpretable units. On 228 tasks and",
+    "author": "Drew T. Nguyen, William Fithian",
+    "published_at": "2026-10-08T17:59:50+00:00",
+    "tags": [],
+    "extra": {
+      "categories": [
+        {
+          "term": "cs.AI",
+          "scheme": "http://arxiv.org/schemas/atom",
+          "label": null
+        }
+      ]
+    }
+  },
+  {
+    "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
+    "url": "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "With over a thousand emails, slides, texts, and documents from the United States v. Elizabeth Holmes trial, Extend engineer Bo Lau created a website that simulates what it might have been like to rifl",
+    "author": "Amanda Silberling",
+    "published_at": "2026-10-08T21:00:00+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
+    "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safet",
+    "author": "Rebecca Bellan",
+    "published_at": "2026-10-08T20:04:26+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Ben Affleck is an AI nerd, and the internet is impressed",
+    "url": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Ben Affleck is going viral for his deep knowledge of AI, from neural networks and transformers to open weights. The actor, who sold his AI filmmaking startup to Netflix earlier this year, is proving h",
+    "author": "Sarah Perez",
+    "published_at": "2026-10-08T18:20:32+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+    "url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "The company behind the popular LMArena leaderboard has raised $200 million led by Lightspeed and Khosla, and is now measuring AI models on alignment issues such as lying.",
+    "author": "Julie Bort",
+    "published_at": "2026-10-08T18:19:45+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
+    "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "It had previously been reported that the AI lab's annualized revenue was some $70 billion, but a new report claims it's a whole lot less than that.",
+    "author": "Lucas Ropek",
+    "published_at": "2026-10-08T18:19:42+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "OpenAI’s math solutions aren’t meeting the field’s standards yet",
+    "url": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "OpenAI's flood of proofs deviated from the guidelines set by a group of mathematical researchers consulted by the frontier lab.",
+    "author": "Tim Fernholz",
+    "published_at": "2026-10-08T18:10:55+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "TechCrunch AI"
+    }
+  },
+  {
+    "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+    "url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+    "source": "media_rss",
+    "source_label": "Tech Media",
+    "score": 30,
+    "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blue",
+    "author": "MIT Technology Review",
+    "published_at": "2026-10-09T00:08:24+00:00",
+    "tags": [],
+    "extra": {
+      "source_name": "MIT Tech Review AI"
+    }
+  }
+]
